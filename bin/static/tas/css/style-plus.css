@@ -1,0 +1,106 @@
+html,body{
+    width:100%;
+    height:100%;
+    background:url(../img/LOGIN.png) no-repeat;
+    background-size: 100%; position: relative;
+}
+.word-position{
+	margin-left: 50%;
+	margin-top: 8%;
+	opacity: 0.1;
+    position: absolute;
+} 
+.arrow{
+	font-family: "microsoft sans serif";
+	color: #DAE0E5;
+	font-size: 1.3em;
+    position: absolute;
+    margin-left: 48%;
+    margin-top: 40%;
+    cursor: pointer;
+}
+.ui-dialog{ 
+	width: 15%;height: 40%;
+	position: absolute;
+	background: #FFFFFF;
+	margin-left: 43%;
+	margin-top: 15%; opacity: 0;
+	}
+.ui-dialog-title{
+	height: 48px;line-height: 48px; padding:0px 20px;color: #535353;font-size: 16px;
+	border-bottom: 1px solid #efefef;background: #f5f5f5;
+	font-family: "微软雅黑";	
+	}
+.ui-dialog-closebutton{
+	width: 16px;height: 16px;display: block;
+	position: absolute;top: 12px;right: 15px;
+	background:url(../img/close_def.png) no-repeat; cursor: pointer;
+	}
+.ui-dialog-closebutton:hover{
+	background:url(../img/close_hov.png);
+    }
+.ui-register-dialog-closebutton{
+	width: 16px;height: 16px;display: block;
+	position: absolute;top: 12px;right: 15px;
+	background:url(../img/close_def.png) no-repeat; cursor: pointer;
+	}
+.ui-register-dialog-closebutton:hover{
+	background:url(../img/close_hov.png);
+    }
+.ui-dialog-content{
+	padding: 12% 2%;
+	}
+.ui-dialog-pt15{
+	padding-top: 15px;
+	}
+.ui-dialog-l40{
+	height: 35px;line-height: 35px;
+	text-align: right;
+	}
+
+.ui-dialog-input{
+	width: 100%;height: 35px;
+	}
+.ui-dialog-input-username{
+	background: url(../img/input_username.png) no-repeat 2px ;
+	
+	padding: 10px 30px;
+	}
+
+.ui-dialog-input-password{
+	background: url(../img/input_password.png) no-repeat 2px ;
+	padding: 10px 30px;
+	}
+.ui-dialog-submit{
+		width: 100%;height: 30px;background: #243c54;border:none;font-size: 0.9em;color: #fff;
+		outline: none;
+		display: block;text-align: center;line-height: 30px;text-decoration: none; 
+	}
+.ui-dialog-submit:hover{
+		background: #162533;color: #fff;
+	}
+.regi{ margin-top: 8px;}
+.reg{ padding-top: 12px;}
+.dialog-content-title{
+	font-family:"微软雅黑"; font-size: 2em; color:#243c54 ; display: block;text-align: center; padding-bottom: 8%;
+}
+.ui-register-dialog{ 
+	width: 15%;height: 34%;
+	position: absolute;
+	background: #FFFFFF;
+	margin-left: 43%;
+	margin-top: 15%; display: none;
+	}
+.ui-register-dialog-submit{
+		width: 100%;height: 40px;background: #243c54;border:none;font-size: 0.9em;color: #fff;
+		outline: none;
+		display: block;text-align: center;line-height: 40px;text-decoration: none; 
+		
+	}
+.ui-register-dialog-submit:hover{
+		background: #162533;color: #fff;
+	}
+.Error{
+	font-family: "微软雅黑"; font-size: 0.8em; margin: 0;
+	padding: 0; color: #BD2130;
+}
