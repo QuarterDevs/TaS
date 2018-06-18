@@ -1,0 +1,27 @@
+<!doctype html>    
+<html>    
+<head>    
+<meta charset="utf-8">    
+<title>bootstrap 弹出模态框</title>    
+<link rel="stylesheet" href="bootstrap-3.3.5-dist/css/bootstrap.css">    
+<script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+        <script type="text/javascript" src="js/bootstrap.min.js"></script> 
+ <script>
+        function check(){
+            var checkbox = document.getElementById("ch");//选中checkbox的id；
+            if(checkbox.checked==true){//按钮已选中
+                document.getElementById("but").style.backgroundColor="red";
+                document.getElementById("but").removeAttribute("disabled");//移除disabled
+            }else{
+                document.getElementById("but").disadled="disabled";
+            }
+        }
+    </script>
+</head>
+<body>
+    <form name="form1" action="还是按钮.html">
+        <input type="checkbox" id="ch" onclick="check()">我同意协议<br>
+        <input type="submit" disabled="disabled" id="but" value="提交注册">
+    </form>
+</body>
+</html>

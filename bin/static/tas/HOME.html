@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>-人事管理平台-</title>
+		<link rel="stylesheet" href="css/bootstrap.css" />
+		<link rel="stylesheet" href="css/style-plus.css" />
+	
+		<script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+        <script type="text/javascript" src="js/bootstrap.min.js"></script>
+        <script type="text/javascript" src="js/JA.js"></script>
+	</head>
+	<body class="container-fluid">
+	
+		<span class="word-position">
+	    <img  src="img/homepage_word.png" />
+				</span>	
+
+	    <a class="arrow" style="color:#f2ebeb;" >JOIN US >></a>
+	    <!--
+        	登录页面
+        -->
+        <div class="ui-dialog">
+        	<div class="ui-dialog-title" id="dialogDrag" >登录
+        	<div class="ui-dialog-content"> 
+        	<span class="dialog-content-title">占&nbsp;
+        		位</span>
+		<a class="ui-dialog-closebutton" href="#"></a>
+		<form name="form1" method="post" onsubmit="validate_form(this)" >
+			<div class="form-group">
+    <input class="form-control ui-dialog-input ui-dialog-input-username"name="user" id="username" placeholder="username">
+  </div>
+  <div class="form-group">
+    <input type="password" class="form-control ui-dialog-input ui-dialog-input-password" name="pwd"id="password" placeholder="password">
+  </div>
+   <div class="reg">
+   	<button type="submit" class="ui-dialog-submit" href="#" >登录</button>
+   	 </div>	</form>
+   	 <div class="regi">
+   	<button  class="ui-dialog-submit" href="#" id="register" >注册</button>
+   </div>
+	
+       
+			</div>	
+        	</div>
+        	
+        </div>
+        <!--
+        	注册页面
+        -->
+        	  <form name="form2"  method="post" onsubmit="return validate_form2(this)" >	
+        <div class="ui-register-dialog">
+        	<div class="ui-dialog-title" id="dialogDrag" >		
+		注册
+        	<div class="ui-dialog-content">       	
+		<a class="ui-register-dialog-closebutton" href="#"></a>	
+			<div class="form-group">
+    <input class="form-control ui-dialog-input ui-dialog-input-username" name="new_user" id="username" placeholder="用户名">
+  </div>
+  <div class="form-group">
+    <input type="password" class="form-control ui-dialog-input ui-dialog-input-password" name="new_password" id="new_password" placeholder="密码">
+  </div>
+   <div class="form-group">
+    <input type="password" class="form-control ui-dialog-input ui-dialog-input-password" id="check_password" name="check_password"placeholder="确认密码">
+
+  </div>
+   	 <div class="regi">
+   	<button type="submit" class="ui-register-dialog-submit " href="HOME.html" >确认注册</button>
+   </div>	
+  			</div>	
+        	</div>
+        	
+        </div>
+        	</form>
+	</body>
+</html>

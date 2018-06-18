@@ -1,0 +1,28 @@
+body{
+	background-color: #F3F4F5; font-family: "微软雅黑";
+}
+.font{
+	font-family: "微软雅黑"; color:#002028 ;
+}
+.dialog{
+	margin-left: 5%; line-height: 35px;
+}
+#check{
+	margin-right: 45%; font-size: 1em; 
+}
+#submit{
+	background-color: #002028;
+}
+.form-position{
+	width: 60%; position: absolute;left:0; top:0; right:0; bottom: 0; margin: auto; 
+	padding-top: 5%;
+}
+#form2{
+	width: 60%; margin-left: 18%;
+}
+#submit2{
+	  background-color: #024050; color: #D9DBDD; 
+}
+#submit2:hover{
+	background-color: #006983;
+}

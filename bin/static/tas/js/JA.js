@@ -1,4 +1,5 @@
 
+
    var css = {left:'1%'};  
     setInterval(function(){  
         $('.arrow').animate(css,900,rowBack);  
@@ -9,6 +10,7 @@
         else if(css.left==='1.5%')  
             css.left='1%';  
     }  
+
 
 	$(document).ready(	function(){
    	$('.word-position').fadeTo(3000,1);  

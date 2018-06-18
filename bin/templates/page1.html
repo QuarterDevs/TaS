@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>-人事管理平台-</title>
+		<link rel="stylesheet" href="css/bootstrap.css" />
+		<link rel="stylesheet" href="css/right.css" />
+	
+		<script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+        <script type="text/javascript" src="js/bootstrap.min.js"></script>
+        <script type="text/javascript" src="js/JA.js"></script>
+        <!--
+        	自动弹出模态框
+        -->
+    <script type="text/javascript">
+    	
+    $(function(){
+         $("#myModal").modal({
+            keyboard: true
+        });
+    });
+</script>
+ <script>
+        function check(){
+            var checkbox = document.getElementById("box");//选中checkbox的id；
+            if(checkbox.checked==true){//按钮已选中
+            
+                document.getElementById("submit").removeAttribute("disabled");//移除disabled
+            }else{
+                document.getElementById("submit").disadled="disabled";
+            }
+        }
+    </script>
+	</head>
+	<body>
+	
+<!-- Modal -->
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog" style="width:950px" role="document">
+    <div class="modal-content font">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="myModalLabel">填表说明</h4>
+      </div>
+      <div class="modal-body dialog">
+      	<div class="row">
+      		<span> 1.填写内容必须实事求是</span>
+      	</div>
+      	<div class="row">
+      		<span>2.填表前请阅读《海南医学院优秀人才引进管理办法（暂行）》。</span>
+      	</div>
+      	<div class="row">
+      		<span>3.申请人的主要学术成就，填写近五年取得的学术成绩，五年前取得的突出学术贡献和重要成果也可在申请表中反映。</span>
+      	</div>
+      	<div class="row">
+      		<span> 4.有关栏目填写不下的可另附页。</span>
+      	</div>
+      	<div class="row">
+      		<span>5.请提供附件材料，最好能装订成册，主要包括：</span>
+      	</div>
+      	<div class="row">
+      		<span>（1）所有学历证书复印件；</span>
+      	</div>
+      	<div class="row">
+      		<span>（2）申请表中列举的所有科研项目、获奖及专利情况的复印件；</span>
+      	</div>
+      	<div class="row">
+      		<span> （3）3~5篇代表性论文的全文及其刊载杂志封面、目录的复印件，以及在申请表中列举的其他代表性著作封面、目录和论文首页复印件；</span>
+      	</div>
+      	<div class="row">
+      		<span>（4）申请表中列举的SCI、EI、SSCI、CSSCI收录以及论文他引情况证明复印件（须经有关检索机构盖章）；</span>
+      	</div>
+        <div class="row">
+      		<span>（5）申请人在国（境）外任职或在国内担任重要职务的任职或被国（境）外著名大学聘请为讲座教授的相关证明。</span>
+      	</div>
+      	<div class="row">
+      		<span>（6）申请人在国际学术会议上担任职务的证明以及作大会报告、特邀报告的邀请信或通知复印件。</span>
+      	</div>
+      	<div class="row">
+      		<span>6.申请表及附件材料一式一份邮寄（申请表请双面打印）或E-mail至海南医学院组织人事部收。</span>
+      	</div>
+      	<div class="row">
+      		<span>邮寄：海南省海口市龙华区学院路3号（邮编 571101）</span>
+      	</div>
+      	<div class="row">
+      		<span> 邮箱 ：renshichu@hainmc.edu.cn 、 hainanyxy@163.com</span>
+      	</div>
+      </div>
+      
+      <form method="post" id="form1" action="page2.html">
+
+      <div class="modal-footer">
+         <div class="checkbox" id="check">
+    <label>
+      <input type="checkbox" id="box" name="confirm" onclick="check()"> 我同意
+    </label>
+  </div>
+        <button type="submit" id="submit" class="btn btn-primary" disabled="disabled">提交</button>
+      </div>  </form>
+    </div>
+  </div>
+
+	</body>
+</html>

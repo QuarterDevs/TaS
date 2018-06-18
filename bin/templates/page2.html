@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>-人事管理平台-</title>
+		<link rel="stylesheet" href="css/bootstrap.css" />
+		<link rel="stylesheet" href="css/right.css" />
+	
+		<script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+        <script type="text/javascript" src="js/bootstrap.min.js"></script>
+        <script type="text/javascript" src="js/JA.js"></script>
+        <script src="js/bootstrapValidator.min.js"></script> 
+        <link href="css/bootstrapValidator.min.css" rel="stylesheet" />
+        
+        <script>
+		 $(function () {
+        $('form').bootstrapValidator({
+
+　　　　　　　　applicant_name: 'This value is not valid',
+            　feedbackIcons: {
+                　　　　　　　　valid: 'glyphicon glyphicon-ok',
+                　　　　　　　　invalid: 'glyphicon glyphicon-remove',
+                　　　　　　　　validating: 'glyphicon glyphicon-refresh'
+            　　　　　　　　   },
+            fields: {
+                applicant_name: {
+                    message: '用户名验证失败',
+                    validators: {
+                        notEmpty: {
+                            message: '该项不能为空'
+                        }
+                    }
+                },
+                applicant_degree: {
+                    validators: {
+                        notEmpty: {
+                            message: '该项不能为空'
+                        }
+                    }
+                },
+                 applicant_title: {
+                 
+                    validators: {
+                        notEmpty: {
+                            message: '该项不能为空'
+                        }
+                    }
+                },
+                 applicant_tel: {
+                   
+                    validators: {
+                        notEmpty: {
+                            message: '该项不能为空'
+                        },
+                        numeric: {
+                            message: '电话号码格式有误'
+                        }
+                    }
+                },
+                 applicant_email: {
+                
+                    validators: {
+                        notEmpty: {
+                            message: '该项不能为空'
+                        },
+                        emailAddress: {
+                            message: '邮箱地址格式有误'
+                        }
+                    }
+                },
+                 applicant_now_company: {
+             
+                    validators: {
+                        notEmpty: {
+                            message: '该项不能为空'
+                        }
+                    }
+                },
+                 applicant_introduce_cate: {
+             
+                    validators: {
+                        notEmpty: {
+                            message: '该项不能为空'
+                        }
+                    }
+                },
+                applicant_apply_date: {
+             
+                    validators: {
+                        notEmpty: {
+                            message: '该项不能为空'
+                        }
+                    }
+                }
+            }
+        });
+    });
+
+
+	</script>
+	</head>
+	
+	<body>
+		<div class="form-position">
+			
+	
+		<div class="row">
+			<div class="panel panel-default">
+            <div class="panel-heading">
+            <h3 class="panel-title">申请人概况</h3>
+        </div>
+  <div class="panel-body">
+    <form class="form-horizontal" id="form2">
+  <div class="form-group">
+    <label  class="col-sm-2 control-label">申请人姓名</label>
+    <div class="col-sm-10">
+      <input type="text" class="form-control" id="inputEmail3" placeholder="applicant_name" name="applicant_name" value= {{data["applicant_name"]}} >
+    </div>
+  </div>
+   <div class="form-group">
+    <label  class="col-sm-2 control-label">申请人学位</label>
+    <div class="col-sm-10">
+      <input type="text" class="form-control" name="applicant_degree" placeholder="PhD"id="textfield" value= {{data["applicant_degree"]}}  >
+    </div>
+  </div>
+   <div class="form-group">
+    <label class="col-sm-2 control-label">申请人职称</label>
+    <div class="col-sm-10">
+      <input type="text" class="form-control"name="applicant_title" placeholder="professor"id="textfield" value= {{data["applicant_title"]}}  >
+    </div>
+  </div>
+  <div class="form-group">
+    <label class="col-sm-2 control-label">联系方式</label>
+    <div class="col-sm-10">
+      <input type="text" class="form-control"name="applicant_tel" placeholder="17799123487"id="phone" value= {{data["applicant_tel"]}} >
+    </div>
+  </div>
+  <div class="form-group">
+    <label class="col-sm-2 control-label">Email</label>
+    <div class="col-sm-10">
+      <input type="text" class="form-control" name="applicant_email" placeholder="applicant@gmail.com"id="textfield" value= {{data["applicant_email"]}}  >
+    </div>
+  </div>
+  <div class="form-group">
+    <label class="col-sm-2 control-label">现工作或学习单位</label>
+    <div class="col-sm-10">
+      <input type="text" class="form-control"name="applicant_now_company" placeholder="Hainan Medical University"id="textfield"value= {{data["applicant_now_company"]}}  >
+    </div>
+  </div>
+  <div class="form-group">
+   <label class="col-sm-2 control-label" >申请引进类别</label>
+    <div class="col-sm-10">
+      <input type="text" class="form-control"name="applicant_introduce_cate"placeholder="technology" id="textfield"value= {{data["applicant_introduce_cate"]}} >
+    </div>
+  </div>
+  <div class="form-group">
+    <label class="col-sm-2 control-label">申请日期</label>
+    <div class="col-sm-10">
+      <input type="date" class="form-control"  name="applicant_apply_date" placeholder="2018/06/08" id="textfield"value= {{data["applicant_apply_date"]}} >
+    </div>
+  </div>
+  <div class="form-group">
+    <div class="col-sm-offset-2 col-sm-10">
+     
+    </div>
+  </div>
+  <div class="form-group">
+    <div class="col-sm-offset-2 col-sm-10">
+      <button type="submit" class="btn btn-default" id="submit2">提交</button>
+    </div>
+  </div>
+</form>
+
+  </div>
+</div>
+		</div>
+<div class="row">
+	<nav aria-label="...">
+  <ul class="pager">
+
+    <li class="previous"><a href="page1.html"><span aria-hidden="true">&larr;</span> 上一页</a></li>  
+    <li class="next"><a href="#">下一页<span aria-hidden="true">&rarr;</span></a></li>
+  </ul>
+</nav>
+</div>	</div>
+	</body>
+</html>
