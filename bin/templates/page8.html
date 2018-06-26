@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>-人事管理平台-</title>
+			<link rel="stylesheet" href="../static/tas/css/bootstrap.css" />
+		<link rel="stylesheet" href="../static/tas/css/right.css" />
+	
+		<script type="text/javascript" src="../static/tas/js/jquery-3.3.1.min.js"></script>
+        <script type="text/javascript" src="../static/tas/js/bootstrap.min.js"></script>
+        <script src="../static/tas/js/bootstrapValidator.min.js"></script> 
+        <link href="../static/tas/css/bootstrapValidator.min.css" rel="stylesheet" />
+        <link type="text/css" rel="stylesheet" href="../static/tas/css/fileinput.min.css" />
+        <script type="text/javascript" src="../static/tas/js/fileinput.min.js"></script>
+        <script type="text/javascript" src="../static/tas/js/zh.js"></script>
+        <script type="text/javascript" src="../static/tas/js/JA.js"></script>
+
+	</head> 
+	<body>
+		<div class="form-position">
+			
+	
+		<div class="row">
+			<div class="panel panel-default">
+            <div class="panel-heading">
+            <h3 class="panel-title">近五年申请人申请和获授权专利情况</h3>
+        </div>
+  <div class="panel-body">
+
+  </div>
+   <form class="form-horizontal" id="form5" method="post" action="">
+    
+        <div class="row">
+        	<table class="table table-striped">
+             <tr align="center">
+    <td colspan="6"> <label for="select"></label>
+        已授权专利：共&nbsp;<select name="patented_number" id="select"  value= {{data["patented_number"]}} >
+           <option>5</option>
+          <option>0</option>
+          <option>1</option>
+          <option>2</option>
+          <option>3</option>
+          <option>4</option>
+         
+        </select>
+        项,按重要性填写主要专利，总共不超过10项。
+</td>
+  </tr>
+  <tr align="center">
+    <td>序号</td>
+    <td>专利名称</td>
+    <td>专利授权国</td>
+    <td>专利号</td>
+    <td>授权公告日</td>
+    <td>排序</td>
+  </tr>
+  <tr>
+    <td>1</td>
+    <td><div class="form-group space">
+    <input type="text" class="form-control" name="patented1_name" placeholder="a name"  id="textfield"  value= {{data["patented1_name"]}}  >
+             </div></td>
+    <td><div class="form-group space">
+    <input type="text" class="form-control"name="patented1_country" placeholder="China"  id="textfield" value= {{data["patented1_country"]}} >
+             </div></td>
+    <td><div class="form-group space">
+    <input type="text" class="form-control" name="patented1_number" placeholder="200210000001.1"  id="textfield" value= {{data["patented1_number"]}} >
+             </div></td>
+    <td><div class="form-group space">
+    <input type="text" class="form-control"name="patented1_date" placeholder="2013/03/12"  id="textfield" value= {{data["patented1_date"]}} >
+             </div></td>
+    <td><div class="form-group space">
+    <input type="text" class="form-control"name="patented1_rank" placeholder="1"  id="textfield" value= {{data["patented1_rank"]}} >
+             </div></td>
+  </tr>
+  <tr>
+    <td>1</td>
+    <td><div class="form-group space">
+    <input type="text" class="form-control" name="patented2_name" placeholder="a name"  id="textfield"  value= {{data["patented2_name"]}}  >
+             </div></td>
+    <td><div class="form-group space">
+    <input type="text" class="form-control"name="patented2_country" placeholder="China"  id="textfield" value= {{data["patented2_country"]}} >
+             </div></td>
+    <td><div class="form-group space">
+    <input type="text" class="form-control" name="patented2_number" placeholder="200210000001.1"  id="textfield" value= {{data["patented2_number"]}} >
+             </div></td>
+    <td><div class="form-group space">
+    <input type="text" class="form-control"name="patented2_date" placeholder="2013/03/12"  id="textfield" value= {{data["patented2_date"]}} >
+             </div></td>
+    <td><div class="form-group space">
+    <input type="text" class="form-control"name="patented2_rank" placeholder="1"  id="textfield" value= {{data["patented2_rank"]}} >
+             </div></td>
+  </tr>
+  <tr>
+    <td>1</td>
+    <td><div class="form-group space">
+    <input type="text" class="form-control" name="patented3_name" placeholder="a name"  id="textfield"  value= {{data["patented3_name"]}}  >
+             </div></td>
+    <td><div class="form-group space">
+    <input type="text" class="form-control"name="patented3_country" placeholder="China"  id="textfield" value= {{data["patented3_country"]}} >
+             </div></td>
+    <td><div class="form-group space">
+    <input type="text" class="form-control" name="patented3_number" placeholder="200210000001.1"  id="textfield" value= {{data["patented3_number"]}} >
+             </div></td>
+    <td><div class="form-group space">
+    <input type="text" class="form-control"name="patented3_date" placeholder="2013/03/12"  id="textfield" value= {{data["patented3_date"]}} >
+             </div></td>
+    <td><div class="form-group space">
+    <input type="text" class="form-control"name="patented3_rank" placeholder="1"  id="textfield" value= {{data["patented3_rank"]}} >
+             </div></td>
+  </tr>
+  <tr>
+    <td>1</td>
+    <td><div class="form-group space">
+    <input type="text" class="form-control" name="patented4_name" placeholder="a name"  id="textfield"  value= {{data["patented4_name"]}}  >
+             </div></td>
+    <td><div class="form-group space">
+    <input type="text" class="form-control"name="patented4_country" placeholder="China"  id="textfield" value= {{data["patented4_country"]}} >
+             </div></td>
+    <td><div class="form-group space">
+    <input type="text" class="form-control" name="patented4_number" placeholder="200210000001.1"  id="textfield" value= {{data["patented4_number"]}} >
+             </div></td>
+    <td><div class="form-group space">
+    <input type="text" class="form-control"name="patented4_date" placeholder="2013/03/12"  id="textfield" value= {{data["patented4_date"]}} >
+             </div></td>
+    <td><div class="form-group space">
+    <input type="text" class="form-control"name="patented4_rank" placeholder="1"  id="textfield" value= {{data["patented4_rank"]}} >
+             </div></td>
+  </tr>
+   <tr>
+    <td>1</td>
+    <td><div class="form-group space">
+    <input type="text" class="form-control" name="patented5_name" placeholder="a name"  id="textfield"  value= {{data["patented5_name"]}}  >
+             </div></td>
+    <td><div class="form-group space">
+    <input type="text" class="form-control"name="patented5_country" placeholder="China"  id="textfield" value= {{data["patented5_country"]}} >
+             </div></td>
+    <td><div class="form-group space">
+    <input type="text" class="form-control" name="patented5_number" placeholder="200210000001.1"  id="textfield" value= {{data["patented5_number"]}} >
+             </div></td>
+    <td><div class="form-group space">
+    <input type="text" class="form-control"name="patented5_date" placeholder="2013/03/12"  id="textfield" value= {{data["patented5_date"]}} >
+             </div></td>
+    <td><div class="form-group space">
+    <input type="text" class="form-control"name="patented5_rank" placeholder="1"  id="textfield" value= {{data["patented5_rank"]}} >
+             </div></td>
+  </tr>
+  <tr align="center">
+    <td colspan="6"><label for="select"></label>
+        尚未授权专利：共&nbsp;<select name="unpatented_number" id="select" value= {{data["unpatented_number"]}}  >
+         
+          <option>0</option>
+          <option>1</option>
+          <option>2</option>
+          <option>3</option>
+        
+         
+        </select>
+        项,按重要性填写主要专利，总共不超过3项。</td>
+  </tr>
+  <tr>
+    <td>序号</td>
+    <td>专利名称</td>
+    <td>专利申请国</td>
+    <td>申请号</td>
+    <td>专利申请日</td>
+    <td>排序</td>
+  </tr>
+  <tr>
+     <td>1</td>
+    <td><div class="form-group space">
+    <input type="text" class="form-control" name="unpatented1_name" placeholder="a name"  id="textfield" value= {{data["unpatented1_name"]}}  >
+             </div></td>
+    <td><div class="form-group space">
+    <input type="text" class="form-control"name="unpatented1_country" placeholder="China"  id="textfield" value= {{data["unpatented1_country"]}}   >
+             </div></td>
+    <td><div class="form-group space">
+    <input type="text" class="form-control" name="unpatented1_apply_number" placeholder="0000001"  id="textfield" value= {{data["unpatented1_apply_number"]}}  >
+             </div></td>
+    <td><div class="form-group space">
+    <input type="text" class="form-control" name="unpatented1_apply_date" placeholder="2016/03/23"  id="textfield" value= {{data["unpatented1_apply_date"]}}  >
+             </div></td>
+    <td><div class="form-group space">
+    <input type="text" class="form-control"name="unpatented1_rank" placeholder="1"  id="textfield" value= {{data["unpatented1_rank"]}}  >
+             </div></td>
+  </tr>
+  <tr>
+     <td>1</td>
+    <td><div class="form-group space">
+    <input type="text" class="form-control" name="unpatented2_name" placeholder="a name"  id="textfield" value= {{data["unpatented2_name"]}}  >
+             </div></td>
+    <td><div class="form-group space">
+    <input type="text" class="form-control"name="unpatented2_country" placeholder="China"  id="textfield" value= {{data["unpatented2_country"]}}   >
+             </div></td>
+    <td><div class="form-group space">
+    <input type="text" class="form-control" name="unpatented2_apply_number" placeholder="0000001"  id="textfield" value= {{data["unpatented2_apply_number"]}}  >
+             </div></td>
+    <td><div class="form-group space">
+    <input type="text" class="form-control" name="unpatented2_apply_date" placeholder="2016/03/23"  id="textfield" value= {{data["unpatented2_apply_date"]}}  >
+             </div></td>
+    <td><div class="form-group space">
+    <input type="text" class="form-control"name="unpatented2_rank" placeholder="1"  id="textfield" value= {{data["unpatented2_rank"]}}  >
+             </div></td>
+  </tr>
+  <tr>
+     <td>1</td>
+    <td><div class="form-group space">
+    <input type="text" class="form-control" name="unpatented3_name" placeholder="a name"  id="textfield" value= {{data["unpatented3_name"]}}  >
+             </div></td>
+    <td><div class="form-group space">
+    <input type="text" class="form-control"name="unpatented3_country" placeholder="China"  id="textfield" value= {{data["unpatented3_country"]}}   >
+             </div></td>
+    <td><div class="form-group space">
+    <input type="text" class="form-control" name="unpatented3_apply_number" placeholder="0000001"  id="textfield" value= {{data["unpatented3_apply_number"]}}  >
+             </div></td>
+    <td><div class="form-group space">
+    <input type="text" class="form-control" name="unpatented3_apply_date" placeholder="2016/03/23"  id="textfield" value= {{data["unpatented3_apply_date"]}}  >
+             </div></td>
+    <td><div class="form-group space">
+    <input type="text" class="form-control"name="unpatented3_rank" placeholder="1"  id="textfield" value= {{data["unpatented3_rank"]}}  >
+             </div></td>
+  </tr>
+            </table>
+        </div>
+    	<div class="row">
+    		<br />
+    		 <button type="submit" class="btn btn-default" id="submit5">提交</button>
+    	</div>
+    	<br />
+    	</form>
+  	</div>
+
+<div class="row">
+	<nav aria-label="...">
+  <ul class="pager">
+
+    <li class="previous"><a href="page7.html"><span aria-hidden="true">&larr;</span> 上一页</a></li>  
+     <li><span class="label label-primary">第八页</span></li>
+    <li class="next"><a href="page9.html">下一页<span aria-hidden="true">&rarr;</span></a></li>
+  </ul>
+</nav>
+</div>
+		</div>
+	</body>
+</html>

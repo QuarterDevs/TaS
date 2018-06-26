@@ -17,12 +17,50 @@ body{
 	width: 60%; position: absolute;left:0; top:0; right:0; bottom: 0; margin: auto; 
 	padding-top: 5%;
 }
+.form5-position{
+	width: 70%; position: absolute;left:0; top:0; right:0; bottom: 0; margin: auto; 
+	padding-top: 5%;
+}
+input{ text-overflow: ellipsis; }
 #form2{
 	width: 60%; margin-left: 18%;
 }
+#form3{
+	width: 80%; margin-left: 18%;
+}
+#form4{
+	width: 70%;margin-left: 16%;
+}
+#form5{
+	width: 95%;margin-left: 2%;
+}
 #submit2{
-	  background-color: #024050; color: #D9DBDD; 
+	  background-color: #024050; color: #D9DBDD;  margin-left: 35%;
 }
 #submit2:hover{
 	background-color: #006983;
+}
+#submit5{
+	 background-color: #024050; color: #D9DBDD;  margin-left: 49%;
+}
+#submit5:hover{
+	background-color: #006983;
+}
+
+#submit4{
+	 background-color: #024050; color: #D9DBDD;  margin-left: 45%;
+}
+#submit4:hover{
+	background-color: #006983;
+}
+.space{
+	padding-right: 10%;
+}
+
+h5,h4{
+	font-weight: bold;
+}
+.form2-position{
+	width: 50%; position: absolute;left:0; top:0; right:0; bottom: 0; margin: auto; 
+	padding-top: 5%;
 }

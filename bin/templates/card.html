@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html class="no-js">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>CARD</title>
+
+    <script src="../static/tas/js/jquery-3.3.1.min.js">></script>
+       <link rel="stylesheet" type="text/css" href="../static/tas/css/bootstrap.css" />
+    <link rel="stylesheet" type="text/css" href="../static/tas/css/normalize.css" />
+    <link rel="stylesheet" type="text/css" href="../static/tas/css/demo.css" />
+    <link rel="stylesheet" type="text/css" href="../static/tas/css/icons.css" />
+    <link rel="stylesheet" type="text/css" href="../static/tas/css/component.css" />
+    <!--[if IE]>
+  		<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+	<script> 
+$(document).ready(function(){
+  $("#agree").click(function(){
+    $(".pricing__item").css("background", "#f0f5f9");  
+    $(".pricing__item").css("color", "#52616a");  
+  });
+});
+</script> 
+	<script> 
+$(document).ready(function(){
+  $("#pass").click(function(){
+    $(".pricing__item").css("background", "#c9d6de");  
+    $(".pricing__item").css("color", "#FFFFFF");  
+  });
+});
+</script> 
+</head>
+
+<body>
+    <div class="container-fluid">
+      
+    
+        <section class="pricing-section bg-3">
+       
+            <div class="pricing pricing--jinpa">
+                <div class="pricing__item">
+                <div class="row"> 
+                	<h5 class="page-header">基本信息</h5>
+                	<div class="col-sm-4">
+                	
+                		<div class="form-group">
+                       <label for="exampleInputEmail1">姓名</label>
+                       <input class="form-control" type="text" value="Tom" readonly>
+                        </div>
+                        	<div class="form-group">
+                       <label for="exampleInputEmail1">性别</label>
+                       <input class="form-control" type="text" value="男" readonly>
+                        </div>
+                        	<div class="form-group">
+                       <label for="exampleInputEmail1">毕业院校</label>
+                       <input class="form-control" type="text" value="海南医学院" readonly>
+                        </div>
+                	</div>
+                	<div class="col-sm-4">
+                			<div class="form-group">
+                       <label for="exampleInputEmail1">学历</label>
+                       <input class="form-control" type="text" value="硕士" readonly>
+                        </div>
+                        	<div class="form-group">
+                       <label for="exampleInputEmail1">出生年月</label>
+                       <input class="form-control" type="text" value="1992/7/12" readonly>
+                        </div>
+                        	<div class="form-group">
+                       <label for="exampleInputEmail1">联系方式</label>
+                       <input class="form-control" type="text" value="17754112401" readonly>
+                        </div>
+                	</div>
+                	<div class="col-sm-4 photo">
+                	<img src="../static/tas/img/photo.png" />	
+                	</div>
+                </div>
+                     <div class="row">
+                	<h5 class="page-header">主要学术贡献</h5>
+              
+                		
+                        	<div class="form-group">
+                     
+                       <textarea class="form-control" rows="5" type="text" value="海南医学院" readonly></textarea>
+                        </div>
+                	
+                </div>
+                 
+                
+                    <button id="agree" class="pricing__action">通过</button><br />
+                    <button id="pass" class="pricing__action">不通过</button>
+  
+                </div>
+      
+              
+            </div>
+        </section>
+   
+    </div>
+    <!-- /container -->
+</body>
+
+</html>

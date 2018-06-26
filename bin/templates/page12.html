@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>-人事管理平台-</title>
+			<link rel="stylesheet" href="../static/tas/css/bootstrap.css" />
+		<link rel="stylesheet" href="../static/tas/css/right.css" />
+	
+		<script type="text/javascript" src="../static/tas/js/jquery-3.3.1.min.js"></script>
+        <script type="text/javascript" src="../static/tas/js/bootstrap.min.js"></script>
+        <script src="../static/tas/js/bootstrapValidator.min.js"></script> 
+        <link href="../static/tas/css/bootstrapValidator.min.css" rel="stylesheet" />
+        <link type="text/css" rel="stylesheet" href="../static/tas/css/fileinput.min.css" />
+        <script type="text/javascript" src="../static/tas/js/fileinput.min.js"></script>
+        <script type="text/javascript" src="../static/tas/js/zh.js"></script>
+        <script type="text/javascript" src="../static/tas/js/JA.js"></script>
+
+	</head> 
+	<body>
+			<div class="form-position">
+			
+	
+		<div class="row">
+			<div class="panel panel-default">
+            <div class="panel-heading">
+            <h3 class="panel-title">近五年申请人教育教学与人才培养情况</h3>
+        </div>
+  <div class="panel-body">
+
+  </div>
+   <form class="form-horizontal" id="form5" method="post" action="">
+    
+        <div class="row">
+        	<table class="table table-striped">
+             <tr align="center">
+    <td colspan="4" style="font-weight: bold; font-size: 1.17em;">授课情况</td>
+  </tr>
+  <tr align="center">
+    <td colspan="2">课程名称</td>
+    <td>授课对象</td>
+    <td>总课时数</td>
+  </tr>
+  <tr align="center">
+    <td colspan="2" width="400px"><div class="form-group">
+    <input type="text" style="width: 400px;" class="form-control" name="course1_name" placeholder="computer science"  value= {{data["course1_name"]}} >
+             </div></td>
+    <td><div class="form-group"width="250px">
+    <input type="text"style="width: 150px;" class="form-control" name="course1_object" placeholder="University students"value= {{data["course1_object"]}}  >
+             </div></td>
+    <td><div class="form-group"width="250px">
+    <input type="text"style="width: 150px;" class="form-control"name="course1_count" placeholder="20"value= {{data["course1_count"]}} >
+             </div></td>
+  </tr>
+  <tr align="center">
+    <td colspan="2" width="400px"><div class="form-group">
+    <input type="text" style="width: 400px;" class="form-control" name="course2_name" placeholder="computer science"  value= {{data["course2_name"]}} >
+             </div></td>
+    <td><div class="form-group"width="250px">
+    <input type="text"style="width: 150px;" class="form-control" name="course2_object" placeholder="University students"value= {{data["course2_object"]}}  >
+             </div></td>
+    <td><div class="form-group"width="250px">
+    <input type="text"style="width: 150px;" class="form-control"name="course2_count" placeholder="20"value= {{data["course2_count"]}} >
+             </div></td>
+  </tr>
+    <tr align="center">
+    <td colspan="2" width="400px"><div class="form-group">
+    <input type="text" style="width: 400px;" class="form-control" name="course3_name" placeholder="computer science"  value= {{data["course3_name"]}} >
+             </div></td>
+    <td><div class="form-group"width="250px">
+    <input type="text"style="width: 150px;" class="form-control" name="course3_object" placeholder="University students"value= {{data["course3_object"]}}  >
+             </div></td>
+    <td><div class="form-group"width="250px">
+    <input type="text"style="width: 150px;" class="form-control"name="course3_count" placeholder="20"value= {{data["course3_count"]}} >
+             </div></td>
+  </tr>
+   <tr align="center">
+    <td colspan="2" width="400px"><div class="form-group">
+    <input type="text" style="width: 400px;" class="form-control" name="course4_name" placeholder="computer science"  value= {{data["course4_name"]}} >
+             </div></td>
+    <td><div class="form-group"width="250px">
+    <input type="text"style="width: 150px;" class="form-control" name="course4_object" placeholder="University students"value= {{data["course4_object"]}}  >
+             </div></td>
+    <td><div class="form-group"width="250px">
+    <input type="text"style="width: 150px;" class="form-control"name="course4_count" placeholder="20"value= {{data["course4_count"]}} >
+             </div></td>
+  </tr>
+   <tr align="center">
+    <td colspan="2" width="400px"><div class="form-group">
+    <input type="text" style="width: 400px;" class="form-control" name="course5_name" placeholder="computer science"  value= {{data["course5_name"]}} >
+             </div></td>
+    <td><div class="form-group"width="250px">
+    <input type="text"style="width: 150px;" class="form-control" name="course5_object" placeholder="University students"value= {{data["course5_object"]}}  >
+             </div></td>
+    <td><div class="form-group"width="250px">
+    <input type="text"style="width: 150px;" class="form-control"name="course5_count" placeholder="20"value= {{data["course5_count"]}} >
+             </div></td>
+  </tr>
+   <tr align="center">
+    <td colspan="2" width="400px"><div class="form-group">
+    <input type="text" style="width: 400px;" class="form-control" name="course6_name" placeholder="computer science"  value= {{data["course6_name"]}} >
+             </div></td>
+    <td><div class="form-group"width="250px">
+    <input type="text"style="width: 150px;" class="form-control" name="course6_object" placeholder="University students"value= {{data["course6_object"]}}  >
+             </div></td>
+    <td><div class="form-group"width="250px">
+    <input type="text"style="width: 150px;" class="form-control"name="course6_count" placeholder="20"value= {{data["course6_count"]}} >
+             </div></td>
+  </tr>
+   <tr align="center">
+    <td colspan="2" width="400px"><div class="form-group">
+    <input type="text" style="width: 400px;" class="form-control" name="course7_name" placeholder="computer science"  value= {{data["course7_name"]}} >
+             </div></td>
+    <td><div class="form-group"width="250px">
+    <input type="text"style="width: 150px;" class="form-control" name="course7_object" placeholder="University students"value= {{data["course7_object"]}}  >
+             </div></td>
+    <td><div class="form-group"width="250px">
+    <input type="text"style="width: 150px;" class="form-control"name="course7_count" placeholder="20"value= {{data["course7_count"]}} >
+             </div></td>
+  </tr>
+    <tr align="center">
+    <td colspan="2" width="400px"><div class="form-group">
+    <input type="text" style="width: 400px;" class="form-control" name="course8_name" placeholder="computer science"  value= {{data["course8_name"]}} >
+             </div></td>
+    <td><div class="form-group"width="250px">
+    <input type="text"style="width: 150px;" class="form-control" name="course8_object" placeholder="University students"value= {{data["course8_object"]}}  >
+             </div></td>
+    <td><div class="form-group"width="250px">
+    <input type="text"style="width: 150px;" class="form-control"name="course8_count" placeholder="20"value= {{data["course8_count"]}} >
+             </div></td>
+  </tr>
+    <tr align="center">
+    <td colspan="2" width="400px"><div class="form-group">
+    <input type="text" style="width: 400px;" class="form-control" name="course9_name" placeholder="computer science"  value= {{data["course9_name"]}} >
+             </div></td>
+    <td><div class="form-group"width="250px">
+    <input type="text"style="width: 150px;" class="form-control" name="course9_object" placeholder="University students"value= {{data["course9_object"]}}  >
+             </div></td>
+    <td><div class="form-group"width="250px">
+    <input type="text"style="width: 150px;" class="form-control"name="course9_count" placeholder="20"value= {{data["course9_count"]}} >
+             </div></td>
+  </tr>
+   <tr align="center">
+    <td colspan="2" width="400px"><div class="form-group">
+    <input type="text" style="width: 400px;" class="form-control" name="course10_name" placeholder="computer science"  value= {{data["course10_name"]}} >
+             </div></td>
+    <td><div class="form-group"width="250px">
+    <input type="text"style="width: 150px;" class="form-control" name="course10_object" placeholder="University students"value= {{data["course10_object"]}}  >
+             </div></td>
+    <td><div class="form-group"width="250px">
+    <input type="text"style="width: 150px;" class="form-control"name="course10_count" placeholder="20"value= {{data["course10_count"]}} >
+             </div></td>
+  </tr>
+  <tr>
+    <td colspan="4">&nbsp;</td>
+  </tr>
+  <tr align="center">
+    <td colspan="4" style="font-weight: bold;font-size: 1.17em;">指导研究生情况</td>
+  </tr>
+  <tr align="center">
+    <td colspan="2">指导博士生</td>
+    <td colspan="2">指导硕士生</td>
+  </tr>
+  <tr align="center">
+    <td>毕业人数</td>
+    <td>在读人数</td>
+    <td>毕业人数</td>
+    <td>在读人数</td>
+  </tr>
+  <tr align="center">
+    <td><div class="form-group"width="250px">
+    <input type="text"style="width: 150px;" class="form-control" name="doctoral_graduates" placeholder="10"value= {{data["doctoral_graduates"]}} >
+             </div></td>
+    <td><div class="form-group"width="250px">
+    <input type="text"style="width: 150px;" class="form-control" name="doctoral_students" placeholder="6" value= {{data["doctoral_students"]}} >
+             </div></td>
+    <td><div class="form-group"width="250px">
+    <input type="text"style="width: 150px;" class="form-control"name="master_graduates" placeholder="7"size="15" value= {{data["master_graduates"]}}  >
+             </div></td>
+    <td><div class="form-group"width="250px">
+    <input type="text"style="width: 150px;" class="form-control"name="master_students" placeholder="3" value= {{data["master_students"]}}   >
+             </div></td>
+  </tr>
+  <tr align="center">
+    <td colspan="4" style="font-weight: bold;font-size: 1.17em;">获国家级、省部级教学成果奖情况</td>
+  </tr>
+  <tr align="center">
+    <td>获奖项目名称</td>
+    <td>奖励等级</td>
+    <td>奖励年度</td>
+    <td>排序</td>
+  </tr>
+  <tr align="center">
+    <td><div class="form-group">
+    <input type="text" style="width: 400px;" class="form-control"name="project1_name" placeholder="a project name"value= {{data["project1_name"]}}  >
+             </div></td>
+    <td><div class="form-group"width="250px">
+    <input type="text"style="width: 150px;" class="form-control"name="project1_level" placeholder="national level"value= {{data["project1_level"]}}  >
+             </div></td>
+    <td><div class="form-group"width="250px">
+    <input type="text"style="width: 150px;" class="form-control" name="project1_date" placeholder="2014"value= {{data["project1_date"]}} > 
+    <td><div class="form-group"width="250px">
+    <input type="text"style="width: 150px;" class="form-control"name="project1_rank" placeholder="1"value= {{data["project1_rank"]}} >
+             </div></td>
+  </tr>
+  <tr align="center">
+    <td><div class="form-group">
+    <input type="text" style="width: 400px;" class="form-control"name="project2_name" placeholder="a project name"value= {{data["project2_name"]}}  >
+             </div></td>
+    <td><div class="form-group"width="250px">
+    <input type="text"style="width: 150px;" class="form-control"name="project2_level" placeholder="national level"value= {{data["project2_level"]}}  >
+             </div></td>
+    <td><div class="form-group"width="250px">
+    <input type="text"style="width: 150px;" class="form-control" name="project2_date" placeholder="2014"value= {{data["project2_date"]}} > 
+    <td><div class="form-group"width="250px">
+    <input type="text"style="width: 150px;" class="form-control"name="project2_rank" placeholder="1"value= {{data["project2_rank"]}} >
+             </div></td>
+  </tr>
+  <tr align="center">
+    <td><div class="form-group">
+    <input type="text" style="width: 400px;" class="form-control"name="project3_name" placeholder="a project name"value= {{data["project3_name"]}}  >
+             </div></td>
+    <td><div class="form-group"width="250px">
+    <input type="text"style="width: 150px;" class="form-control"name="project3_level" placeholder="national level"value= {{data["project3_level"]}}  >
+             </div></td>
+    <td><div class="form-group"width="250px">
+    <input type="text"style="width: 150px;" class="form-control" name="project3_date" placeholder="2014"value= {{data["project3_date"]}} > 
+    <td><div class="form-group"width="250px">
+    <input type="text"style="width: 150px;" class="form-control"name="project3_rank" placeholder="1"value= {{data["project3_rank"]}} >
+             </div></td>
+  </tr>
+  <tr align="center">
+    <td><div class="form-group">
+    <input type="text" style="width: 400px;" class="form-control"name="project4_name" placeholder="a project name"value= {{data["project4_name"]}}  >
+             </div></td>
+    <td><div class="form-group"width="250px">
+    <input type="text"style="width: 150px;" class="form-control"name="project4_level" placeholder="national level"value= {{data["project4_level"]}}  >
+             </div></td>
+    <td><div class="form-group"width="250px">
+    <input type="text"style="width: 150px;" class="form-control" name="project4_date" placeholder="2014"value= {{data["project4_date"]}} > 
+    <td><div class="form-group"width="250px">
+    <input type="text"style="width: 150px;" class="form-control"name="project4_rank" placeholder="1"value= {{data["project4_rank"]}} >
+             </div></td>
+  </tr>
+  <tr align="center">
+    <td><div class="form-group">
+    <input type="text" style="width: 400px;" class="form-control"name="project5_name" placeholder="a project name"value= {{data["project5_name"]}}  >
+             </div></td>
+    <td><div class="form-group"width="250px">
+    <input type="text"style="width: 150px;" class="form-control"name="project5_level" placeholder="national level"value= {{data["project5_level"]}}  >
+             </div></td>
+    <td><div class="form-group"width="250px">
+    <input type="text"style="width: 150px;" class="form-control" name="project5_date" placeholder="2014"value= {{data["project5_date"]}} > 
+    <td><div class="form-group"width="250px">
+    <input type="text"style="width: 150px;" class="form-control"name="project5_rank" placeholder="1"value= {{data["project5_rank"]}} >
+             </div></td>
+  </tr>
+  <tr align="center">
+    <td><div class="form-group">
+    <input type="text" style="width: 400px;" class="form-control"name="project1_name" placeholder="a project name"value= {{data["project1_name"]}}  >
+             </div></td>
+    <td><div class="form-group"width="250px">
+    <input type="text"style="width: 150px;" class="form-control"name="project1_level" placeholder="national level"value= {{data["project1_level"]}}  >
+             </div></td>
+    <td><div class="form-group"width="250px">
+    <input type="text"style="width: 150px;" class="form-control" name="project1_date" placeholder="2014"value= {{data["project1_date"]}} > 
+    <td><div class="form-group"width="250px">
+    <input type="text"style="width: 150px;" class="form-control"name="project1_rank" placeholder="1"value= {{data["project1_rank"]}} >
+             </div></td>
+  </tr>
+            </table>
+        </div>
+    	<div class="row">
+    		<br />
+    		 <button type="submit" class="btn btn-default" id="submit5">提交</button>
+    	</div>
+    	<br />
+    	</form>
+  	</div>
+
+<div class="row">
+	<nav aria-label="...">
+  <ul class="pager">
+
+    <li class="previous"><a href="page11.html"><span aria-hidden="true">&larr;</span> 上一页</a></li>  
+     <li><span class="label label-primary">第十二页</span></li>
+    <li class="next"><a href="page13.html">下一页<span aria-hidden="true">&rarr;</span></a></li>
+  </ul>
+</nav>
+</div>
+		</div>
+	</body>
+</html>

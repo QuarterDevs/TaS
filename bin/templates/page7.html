@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>-人事管理平台-</title>
+			<link rel="stylesheet" href="../static/tas/css/bootstrap.css" />
+		<link rel="stylesheet" href="../static/tas/css/right.css" />
+	
+		<script type="text/javascript" src="../static/tas/js/jquery-3.3.1.min.js"></script>
+        <script type="text/javascript" src="../static/tas/js/bootstrap.min.js"></script>
+        <script src="../static/tas/js/bootstrapValidator.min.js"></script> 
+        <link href="../static/tas/css/bootstrapValidator.min.css" rel="stylesheet" />
+        <script type="text/javascript" src="../static/tas/js/JA.js"></script>
+
+	</head> 
+	<body>
+			<div class="form5-position">
+			
+	
+		<div class="row">
+			<div class="panel panel-default">
+            <div class="panel-heading">
+            <h3 class="panel-title">近五年申请人代表性著作、论文情况（十五篇以内）</h3>
+        </div>
+  <div class="panel-body">
+
+  </div>
+   <form class="form-horizontal" id="form5" method="post" action="">
+    
+        <div class="row">
+        	<table class="table table-striped">
+           <tr align="center">
+    <td rowspan="2">著作或论文名称；出版单位或发表刊物名称；期号、起止页码；所有著作者姓名（通讯作者标注*号）</td>
+    <td rowspan="2">出版或发表时间</td>
+    <td rowspan="2">是否被SCI、EI、SSCI、CSSCI收录</td>
+    <td rowspan="2">期刊影响因子</td>
+    <td colspan="3">他引次数</td>
+  </tr>
+  <tr>
+    <td>SCI</td>
+    <td>SSCI</td>
+    <td>CSSCI</td>
+  </tr>
+  <tr>
+    <td><div class="form-group space">
+    <input type="text" class="form-control" name="paper1_name" id="textfield"  value= {{data["paper1_name"]}}  placeholder="S. HORVATH, DNA METHYLATION AGE OF HUMAN TISSUES AND CELL TYPES. GENOME BIOL 14, R115 (2013)."  >
+             </div></td>
+    <td><div class="form-group space">
+    <input type="text" class="form-control" name="paper1_published_date"value= {{data["paper1_published_date"]}}   placeholder="2014/05/08" id="textfield"  >
+             </div></td>
+    <td><div class="form-group space">
+    <input type="text" class="form-control"name="paper1_is_included"value= {{data["paper1_is_included"]}}   placeholder="yes" id="textfield"   >
+             </div></td>
+    <td><div class="form-group space">
+    <input type="text" class="form-control"  name="paper1_impact_factor"value= {{data["paper1_impact_factor"]}}   placeholder="12" id="textfield"  >
+             </div></td>
+    <td><div class="form-group space">
+    <input type="text" class="form-control" name="paper1_sci_iquote_times"value= {{data["paper1_sci_iquote_times"]}}   placeholder="4" id="textfield"   >
+             </div></td>
+    <td><div class="form-group space">
+    <input type="text" class="form-control"name="paper1_ssci_iquote_times" value= {{data["paper1_ssci_iquote_times"]}}  placeholder="5" id="textfield"  >
+             </div></td>
+    <td><div class="form-group space">
+    <input type="text" class="form-control"name="paper1_cssci_iquote_times" value= {{data["paper1_cssci_iquote_times"]}}  placeholder="6" id="textfield" >
+             </div></td>
+  </tr>
+  <tr>
+    <td><div class="form-group space">
+    <input type="text" class="form-control" name="paper2_name" id="textfield" value= {{data["paper2_name"]}}  placeholder="S. HORVATH, DNA METHYLATION AGE OF HUMAN TISSUES AND CELL TYPES. GENOME BIOL 14, R115 (2013)."  >
+             </div></td>
+    <td><div class="form-group space">
+    <input type="text" class="form-control" name="paper2_published_date"value= {{data["paper2_published_date"]}}   placeholder="2014/05/08" id="textfield"  >
+             </div></td>
+    <td><div class="form-group space">
+    <input type="text" class="form-control"name="paper2_is_included"value= {{data["paper2_is_included"]}}   placeholder="yes" id="textfield"   >
+             </div></td>
+    <td><div class="form-group space">
+    <input type="text" class="form-control"  name="paper2_impact_factor"value= {{data["paper2_impact_factor"]}}   placeholder="12" id="textfield"  >
+             </div></td>
+    <td><div class="form-group space">
+    <input type="text" class="form-control" name="paper2_sci_iquote_times"value= {{data["paper2_sci_iquote_times"]}}   placeholder="4" id="textfield"   >
+             </div></td>
+    <td><div class="form-group space">
+    <input type="text" class="form-control"name="paper2_ssci_iquote_times" value= {{data["paper2_ssci_iquote_times"]}}  placeholder="5" id="textfield"  >
+             </div></td>
+    <td><div class="form-group space">
+    <input type="text" class="form-control"name="paper2_cssci_iquote_times" value= {{data["paper2_cssci_iquote_times"]}}  placeholder="6" id="textfield" >
+             </div></td>
+  </tr>
+  <tr>
+    <td><div class="form-group space">
+    <input type="text" class="form-control" name="paper3_name" id="textfield"  value= {{data["paper3_name"]}}  placeholder="S. HORVATH, DNA METHYLATION AGE OF HUMAN TISSUES AND CELL TYPES. GENOME BIOL 14, R115 (2013)."  >
+             </div></td>
+    <td><div class="form-group space">
+    <input type="text" class="form-control" name="paper3_published_date"value= {{data["paper3_published_date"]}}   placeholder="2014/05/08" id="textfield"  >
+             </div></td>
+    <td><div class="form-group space">
+    <input type="text" class="form-control"name="paper3_is_included"value= {{data["paper3_is_included"]}}   placeholder="yes" id="textfield"   >
+             </div></td>
+    <td><div class="form-group space">
+    <input type="text" class="form-control"  name="paper3_impact_factor"value= {{data["paper3_impact_factor"]}}   placeholder="12" id="textfield"  >
+             </div></td>
+    <td><div class="form-group space">
+    <input type="text" class="form-control" name="paper3_sci_iquote_times"value= {{data["paper3_sci_iquote_times"]}}   placeholder="4" id="textfield"   >
+             </div></td>
+    <td><div class="form-group space">
+    <input type="text" class="form-control"name="paper3_ssci_iquote_times" value= {{data["paper3_ssci_iquote_times"]}}  placeholder="5" id="textfield"  >
+             </div></td>
+    <td><div class="form-group space">
+    <input type="text" class="form-control"name="paper3_cssci_iquote_times" value= {{data["paper3_cssci_iquote_times"]}}  placeholder="6" id="textfield" >
+             </div></td>
+  </tr>
+  <tr>
+    <td><div class="form-group space">
+    <input type="text" class="form-control" name="paper4_name" id="textfield" value= {{data["paper4_name"]}}  placeholder="S. HORVATH, DNA METHYLATION AGE OF HUMAN TISSUES AND CELL TYPES. GENOME BIOL 14, R115 (2013)."  >
+             </div></td>
+    <td><div class="form-group space">
+    <input type="text" class="form-control" name="paper4_published_date"value= {{data["paper4_published_date"]}}   placeholder="2014/05/08" id="textfield"  >
+             </div></td>
+    <td><div class="form-group space">
+    <input type="text" class="form-control"name="paper4_is_included"value= {{data["paper4_is_included"]}}   placeholder="yes" id="textfield"   >
+             </div></td>
+    <td><div class="form-group space">
+    <input type="text" class="form-control"  name="paper4_impact_factor"value= {{data["paper4_impact_factor"]}}   placeholder="12" id="textfield"  >
+             </div></td>
+    <td><div class="form-group space">
+    <input type="text" class="form-control" name="paper4_sci_iquote_times"value= {{data["paper4_sci_iquote_times"]}}   placeholder="4" id="textfield"   >
+             </div></td>
+    <td><div class="form-group space">
+    <input type="text" class="form-control"name="paper4_ssci_iquote_times" value= {{data["paper4_ssci_iquote_times"]}}  placeholder="5" id="textfield"  >
+             </div></td>
+    <td><div class="form-group space">
+    <input type="text" class="form-control"name="paper4_cssci_iquote_times" value= {{data["paper4_cssci_iquote_times"]}}  placeholder="6" id="textfield" >
+             </div></td>
+  </tr>
+  <tr>
+    <td><div class="form-group space">
+    <input type="text" class="form-control" name="paper5_name" id="textfield"value= {{data["paper5_name"]}}  placeholder="S. HORVATH, DNA METHYLATION AGE OF HUMAN TISSUES AND CELL TYPES. GENOME BIOL 14, R115 (2013)."  >
+             </div></td>
+    <td><div class="form-group space">
+    <input type="text" class="form-control" name="paper5_published_date"value= {{data["paper5_published_date"]}}   placeholder="2014/05/08" id="textfield"  >
+             </div></td>
+    <td><div class="form-group space">
+    <input type="text" class="form-control"name="paper5_is_included"value= {{data["paper5_is_included"]}}   placeholder="yes" id="textfield"   >
+             </div></td>
+    <td><div class="form-group space">
+    <input type="text" class="form-control"  name="paper5_impact_factor"value= {{data["paper5_impact_factor"]}}   placeholder="12" id="textfield"  >
+             </div></td>
+    <td><div class="form-group space">
+    <input type="text" class="form-control" name="paper5_sci_iquote_times"value= {{data["paper5_sci_iquote_times"]}}   placeholder="4" id="textfield"   >
+             </div></td>
+    <td><div class="form-group space">
+    <input type="text" class="form-control"name="paper5_ssci_iquote_times" value= {{data["paper5_ssci_iquote_times"]}}  placeholder="5" id="textfield"  >
+             </div></td>
+    <td><div class="form-group space">
+    <input type="text" class="form-control"name="paper5_cssci_iquote_times" value= {{data["paper5_cssci_iquote_times"]}}  placeholder="6" id="textfield" >
+             </div></td>
+  </tr>
+   <tr>
+    <td><div class="form-group space">
+    <input type="text" class="form-control" name="paper6_name" id="textfield"value= {{data["paper6_name"]}}  placeholder="S. HORVATH, DNA METHYLATION AGE OF HUMAN TISSUES AND CELL TYPES. GENOME BIOL 14, R115 (2013)."  >
+             </div></td>
+    <td><div class="form-group space">
+    <input type="text" class="form-control" name="paper6_published_date"value= {{data["paper6_published_date"]}}   placeholder="2014/05/08" id="textfield"  >
+             </div></td>
+    <td><div class="form-group space">
+    <input type="text" class="form-control"name="paper6_is_included"value= {{data["paper6_is_included"]}}   placeholder="yes" id="textfield"   >
+             </div></td>
+    <td><div class="form-group space">
+    <input type="text" class="form-control"  name="paper6_impact_factor"value= {{data["paper6_impact_factor"]}}   placeholder="12" id="textfield"  >
+             </div></td>
+    <td><div class="form-group space">
+    <input type="text" class="form-control" name="paper6_sci_iquote_times"value= {{data["paper6_sci_iquote_times"]}}   placeholder="4" id="textfield"   >
+             </div></td>
+    <td><div class="form-group space">
+    <input type="text" class="form-control"name="paper6_ssci_iquote_times" value= {{data["paper6_ssci_iquote_times"]}}  placeholder="5" id="textfield"  >
+             </div></td>
+    <td><div class="form-group space">
+    <input type="text" class="form-control"name="paper6_cssci_iquote_times" value= {{data["paper6_cssci_iquote_times"]}}  placeholder="6" id="textfield" >
+             </div></td>
+  </tr>
+  <tr>
+    <td><div class="form-group space">
+    <input type="text" class="form-control" name="paper7_name" id="textfield"value= {{data["paper7_name"]}}  placeholder="S. HORVATH, DNA METHYLATION AGE OF HUMAN TISSUES AND CELL TYPES. GENOME BIOL 14, R115 (2013)."  >
+             </div></td>
+    <td><div class="form-group space">
+    <input type="text" class="form-control" name="paper7_published_date"value= {{data["paper7_published_date"]}}   placeholder="2014/05/08" id="textfield"  >
+             </div></td>
+    <td><div class="form-group space">
+    <input type="text" class="form-control"name="paper7_is_included"value= {{data["paper7_is_included"]}}   placeholder="yes" id="textfield"   >
+             </div></td>
+    <td><div class="form-group space">
+    <input type="text" class="form-control"  name="paper7_impact_factor"value= {{data["paper7_impact_factor"]}}   placeholder="12" id="textfield"  >
+             </div></td>
+    <td><div class="form-group space">
+    <input type="text" class="form-control" name="paper7_sci_iquote_times"value= {{data["paper7_sci_iquote_times"]}}   placeholder="4" id="textfield"   >
+             </div></td>
+    <td><div class="form-group space">
+    <input type="text" class="form-control"name="paper7_ssci_iquote_times" value= {{data["paper7_ssci_iquote_times"]}}  placeholder="5" id="textfield"  >
+             </div></td>
+    <td><div class="form-group space">
+    <input type="text" class="form-control"name="paper7_cssci_iquote_times" value= {{data["paper7_cssci_iquote_times"]}}  placeholder="6" id="textfield" >
+             </div></td>
+  </tr>
+  <tr>
+    <td><div class="form-group space">
+    <input type="text" class="form-control" name="paper8_name" id="textfield" value= {{data["paper8_name"]}}  placeholder="S. HORVATH, DNA METHYLATION AGE OF HUMAN TISSUES AND CELL TYPES. GENOME BIOL 14, R115 (2013)."  >
+             </div></td>
+    <td><div class="form-group space">
+    <input type="text" class="form-control" name="paper8_published_date"value= {{data["paper8_published_date"]}}   placeholder="2014/05/08" id="textfield"  >
+             </div></td>
+    <td><div class="form-group space">
+    <input type="text" class="form-control"name="paper8_is_included"value= {{data["paper8_is_included"]}}   placeholder="yes" id="textfield"   >
+             </div></td>
+    <td><div class="form-group space">
+    <input type="text" class="form-control"  name="paper8_impact_factor"value= {{data["paper8_impact_factor"]}}   placeholder="12" id="textfield"  >
+             </div></td>
+    <td><div class="form-group space">
+    <input type="text" class="form-control" name="paper8_sci_iquote_times"value= {{data["paper8_sci_iquote_times"]}}   placeholder="4" id="textfield"   >
+             </div></td>
+    <td><div class="form-group space">
+    <input type="text" class="form-control"name="paper8_ssci_iquote_times" value= {{data["paper8_ssci_iquote_times"]}}  placeholder="5" id="textfield"  >
+             </div></td>
+    <td><div class="form-group space">
+    <input type="text" class="form-control"name="paper8_cssci_iquote_times" value= {{data["paper8_cssci_iquote_times"]}}  placeholder="6" id="textfield" >
+             </div></td>
+  </tr>
+  <tr>
+    <td><div class="form-group space">
+    <input type="text" class="form-control" name="paper9_name" id="textfield"value= {{data["paper9_name"]}}  placeholder="S. HORVATH, DNA METHYLATION AGE OF HUMAN TISSUES AND CELL TYPES. GENOME BIOL 14, R115 (2013)."  >
+             </div></td>
+    <td><div class="form-group space">
+    <input type="text" class="form-control" name="paper9_published_date"value= {{data["paper9_published_date"]}}   placeholder="2014/05/08" id="textfield"  >
+             </div></td>
+    <td><div class="form-group space">
+    <input type="text" class="form-control"name="paper9_is_included"value= {{data["paper9_is_included"]}}   placeholder="yes" id="textfield"   >
+             </div></td>
+    <td><div class="form-group space">
+    <input type="text" class="form-control"  name="paper9_impact_factor"value= {{data["paper9_impact_factor"]}}   placeholder="12" id="textfield"  >
+             </div></td>
+    <td><div class="form-group space">
+    <input type="text" class="form-control" name="paper9_sci_iquote_times"value= {{data["paper9_sci_iquote_times"]}}   placeholder="4" id="textfield"   >
+             </div></td>
+    <td><div class="form-group space">
+    <input type="text" class="form-control"name="paper9_ssci_iquote_times" value= {{data["paper9_ssci_iquote_times"]}}  placeholder="5" id="textfield"  >
+             </div></td>
+    <td><div class="form-group space">
+    <input type="text" class="form-control"name="paper9_cssci_iquote_times" value= {{data["paper9_cssci_iquote_times"]}}  placeholder="6" id="textfield" >
+             </div></td>
+  </tr>
+  <tr>
+    <td><div class="form-group space">
+    <input type="text" class="form-control" name="paper10_name" id="textfield" value= {{data["paper10_name"]}}  placeholder="S. HORVATH, DNA METHYLATION AGE OF HUMAN TISSUES AND CELL TYPES. GENOME BIOL 14, R115 (2013)."  >
+             </div></td>
+    <td><div class="form-group space">
+    <input type="text" class="form-control" name="paper10_published_date"value= {{data["paper10_published_date"]}}   placeholder="2014/05/08" id="textfield"  >
+             </div></td>
+    <td><div class="form-group space">
+    <input type="text" class="form-control"name="paper10_is_included"value= {{data["paper10_is_included"]}}   placeholder="yes" id="textfield"   >
+             </div></td>
+    <td><div class="form-group space">
+    <input type="text" class="form-control"  name="paper10_impact_factor"value= {{data["paper10_impact_factor"]}}   placeholder="12" id="textfield"  >
+             </div></td>
+    <td><div class="form-group space">
+    <input type="text" class="form-control" name="paper10_sci_iquote_times"value= {{data["paper10_sci_iquote_times"]}}   placeholder="4" id="textfield"   >
+             </div></td>
+    <td><div class="form-group space">
+    <input type="text" class="form-control"name="paper10_ssci_iquote_times" value= {{data["paper10_ssci_iquote_times"]}}  placeholder="5" id="textfield"  >
+             </div></td>
+    <td><div class="form-group space">
+    <input type="text" class="form-control"name="paper10_cssci_iquote_times" value= {{data["paper10_cssci_iquote_times"]}}  placeholder="6" id="textfield" >
+             </div></td>
+  </tr>
+  <tr>
+    <td><div class="form-group space">
+    <input type="text" class="form-control" name="paper11_name" id="textfield" value= {{data["paper11_name"]}}  placeholder="S. HORVATH, DNA METHYLATION AGE OF HUMAN TISSUES AND CELL TYPES. GENOME BIOL 14, R115 (2013)."  >
+             </div></td>
+    <td><div class="form-group space">
+    <input type="text" class="form-control" name="paper11_published_date"value= {{data["paper11_published_date"]}}   placeholder="2014/05/08" id="textfield"  >
+             </div></td>
+    <td><div class="form-group space">
+    <input type="text" class="form-control"name="paper11_is_included"value= {{data["paper11_is_included"]}}   placeholder="yes" id="textfield"   >
+             </div></td>
+    <td><div class="form-group space">
+    <input type="text" class="form-control"  name="paper11_impact_factor"value= {{data["paper11_impact_factor"]}}   placeholder="12" id="textfield"  >
+             </div></td>
+    <td><div class="form-group space">
+    <input type="text" class="form-control" name="paper11_sci_iquote_times"value= {{data["paper11_sci_iquote_times"]}}   placeholder="4" id="textfield"   >
+             </div></td>
+    <td><div class="form-group space">
+    <input type="text" class="form-control"name="paper11_ssci_iquote_times" value= {{data["paper11_ssci_iquote_times"]}}  placeholder="5" id="textfield"  >
+             </div></td>
+    <td><div class="form-group space">
+    <input type="text" class="form-control"name="paper11_cssci_iquote_times" value= {{data["paper11_cssci_iquote_times"]}}  placeholder="6" id="textfield" >
+             </div></td>
+  </tr>
+  <tr>
+    <td><div class="form-group space">
+    <input type="text" class="form-control" name="paper12_name" id="textfield" value= {{data["paper12_name"]}}  placeholder="S. HORVATH, DNA METHYLATION AGE OF HUMAN TISSUES AND CELL TYPES. GENOME BIOL 14, R115 (2013)."  >
+             </div></td>
+    <td><div class="form-group space">
+    <input type="text" class="form-control" name="paper12_published_date"value= {{data["paper12_published_date"]}}   placeholder="2014/05/08" id="textfield"  >
+             </div></td>
+    <td><div class="form-group space">
+    <input type="text" class="form-control"name="paper12_is_included"value= {{data["paper12_is_included"]}}   placeholder="yes" id="textfield"   >
+             </div></td>
+    <td><div class="form-group space">
+    <input type="text" class="form-control"  name="paper12_impact_factor"value= {{data["paper12_impact_factor"]}}   placeholder="12" id="textfield"  >
+             </div></td>
+    <td><div class="form-group space">
+    <input type="text" class="form-control" name="paper12_sci_iquote_times"value= {{data["paper12_sci_iquote_times"]}}   placeholder="4" id="textfield"   >
+             </div></td>
+    <td><div class="form-group space">
+    <input type="text" class="form-control"name="paper12_ssci_iquote_times" value= {{data["paper12_ssci_iquote_times"]}}  placeholder="5" id="textfield"  >
+             </div></td>
+    <td><div class="form-group space">
+    <input type="text" class="form-control"name="paper12_cssci_iquote_times" value= {{data["paper12_cssci_iquote_times"]}}  placeholder="6" id="textfield" >
+             </div></td>
+  </tr>
+  <tr>
+    <td><div class="form-group space">
+    <input type="text" class="form-control" name="paper13_name" id="textfield" value= {{data["paper13_name"]}}  placeholder="S. HORVATH, DNA METHYLATION AGE OF HUMAN TISSUES AND CELL TYPES. GENOME BIOL 14, R115 (2013)."  >
+             </div></td>
+    <td><div class="form-group space">
+    <input type="text" class="form-control" name="paper13_published_date"value= {{data["paper13_published_date"]}}   placeholder="2014/05/08" id="textfield"  >
+             </div></td>
+    <td><div class="form-group space">
+    <input type="text" class="form-control"name="paper13_is_included"value= {{data["paper13_is_included"]}}   placeholder="yes" id="textfield"   >
+             </div></td>
+    <td><div class="form-group space">
+    <input type="text" class="form-control"  name="paper13_impact_factor"value= {{data["paper13_impact_factor"]}}   placeholder="12" id="textfield"  >
+             </div></td>
+    <td><div class="form-group space">
+    <input type="text" class="form-control" name="paper13_sci_iquote_times"value= {{data["paper13_sci_iquote_times"]}}   placeholder="4" id="textfield"   >
+             </div></td>
+    <td><div class="form-group space">
+    <input type="text" class="form-control"name="paper13_ssci_iquote_times" value= {{data["paper13_ssci_iquote_times"]}}  placeholder="5" id="textfield"  >
+             </div></td>
+    <td><div class="form-group space">
+    <input type="text" class="form-control"name="paper13_cssci_iquote_times" value= {{data["paper13_cssci_iquote_times"]}}  placeholder="6" id="textfield" >
+             </div></td>
+  </tr>
+  <tr>
+    <td><div class="form-group space">
+    <input type="text" class="form-control" name="paper14_name" id="textfield"value= {{data["paper14_name"]}}  placeholder="S. HORVATH, DNA METHYLATION AGE OF HUMAN TISSUES AND CELL TYPES. GENOME BIOL 14, R115 (2013)."  >
+             </div></td>
+    <td><div class="form-group space">
+    <input type="text" class="form-control" name="paper14_published_date"value= {{data["paper14_published_date"]}}   placeholder="2014/05/08" id="textfield"  >
+             </div></td>
+    <td><div class="form-group space">
+    <input type="text" class="form-control"name="paper14_is_included"value= {{data["paper14_is_included"]}}   placeholder="yes" id="textfield"   >
+             </div></td>
+    <td><div class="form-group space">
+    <input type="text" class="form-control"  name="paper14_impact_factor"value= {{data["paper14_impact_factor"]}}   placeholder="12" id="textfield"  >
+             </div></td>
+    <td><div class="form-group space">
+    <input type="text" class="form-control" name="paper14_sci_iquote_times"value= {{data["paper14_sci_iquote_times"]}}   placeholder="4" id="textfield"   >
+             </div></td>
+    <td><div class="form-group space">
+    <input type="text" class="form-control"name="paper14_ssci_iquote_times" value= {{data["paper14_ssci_iquote_times"]}}  placeholder="5" id="textfield"  >
+             </div></td>
+    <td><div class="form-group space">
+    <input type="text" class="form-control"name="paper14_cssci_iquote_times" value= {{data["paper14_cssci_iquote_times"]}}  placeholder="6" id="textfield" >
+             </div></td>
+  </tr>
+  <tr>
+    <td><div class="form-group space">
+    <input type="text" class="form-control" name="paper15_name" id="textfield" value= {{data["paper15_name"]}}  placeholder="S. HORVATH, DNA METHYLATION AGE OF HUMAN TISSUES AND CELL TYPES. GENOME BIOL 14, R115 (2013)."  >
+             </div></td>
+    <td><div class="form-group space">
+    <input type="text" class="form-control" name="paper15_published_date"value= {{data["paper15_published_date"]}}   placeholder="2014/05/08" id="textfield"  >
+             </div></td>
+    <td><div class="form-group space">
+    <input type="text" class="form-control"name="paper15_is_included"value= {{data["paper15_is_included"]}}   placeholder="yes" id="textfield"   >
+             </div></td>
+    <td><div class="form-group space">
+    <input type="text" class="form-control"  name="paper15_impact_factor"value= {{data["paper15_impact_factor"]}}   placeholder="12" id="textfield"  >
+             </div></td>
+    <td><div class="form-group space">
+    <input type="text" class="form-control" name="paper15_sci_iquote_times"value= {{data["paper15_sci_iquote_times"]}}   placeholder="4" id="textfield"   >
+             </div></td>
+    <td><div class="form-group space">
+    <input type="text" class="form-control"name="paper15_ssci_iquote_times" value= {{data["paper15_ssci_iquote_times"]}}  placeholder="5" id="textfield"  >
+             </div></td>
+    <td><div class="form-group space">
+    <input type="text" class="form-control"name="paper15_cssci_iquote_times" value= {{data["paper15_cssci_iquote_times"]}}  placeholder="6" id="textfield" >
+             </div></td>
+  </tr>
+  <tr>
+    <td><div class="form-group space">
+    <input type="text" class="form-control" name="paper1_name" id="textfield" value="" size="50" value= {{data["paper1_name"]}}  placeholder="S. HORVATH, DNA METHYLATION AGE OF HUMAN TISSUES AND CELL TYPES. GENOME BIOL 14, R115 (2013)."  >
+             </div></td>
+    <td><div class="form-group space">
+    <input type="text" class="form-control" name="paper1_published_date"value= {{data["paper1_published_date"]}}   placeholder="2014/05/08" id="textfield"  >
+             </div></td>
+    <td><div class="form-group space">
+    <input type="text" class="form-control"name="paper1_is_included"value= {{data["paper1_is_included"]}}   placeholder="yes" id="textfield"   >
+             </div></td>
+    <td><div class="form-group space">
+    <input type="text" class="form-control"  name="paper1_impact_factor"value= {{data["paper1_impact_factor"]}}   placeholder="12" id="textfield"  >
+             </div></td>
+    <td><div class="form-group space">
+    <input type="text" class="form-control" name="paper1_sci_iquote_times"value= {{data["paper1_sci_iquote_times"]}}   placeholder="4" id="textfield"   >
+             </div></td>
+    <td><div class="form-group space">
+    <input type="text" class="form-control"name="paper1_ssci_iquote_times" value= {{data["paper1_ssci_iquote_times"]}}  placeholder="5" id="textfield"  >
+             </div></td>
+    <td><div class="form-group space">
+    <input type="text" class="form-control"name="paper1_cssci_iquote_times" value= {{data["paper1_cssci_iquote_times"]}}  placeholder="6" id="textfield" >
+             </div></td>
+  </tr>
+            </table>
+        </div>
+    	<div class="row">
+    		<br />
+    		 <button type="submit" class="btn btn-default" id="submit5">提交</button>
+    	</div>
+    	<br />
+    	</form>
+    	 <div class="panel-footer">期刊的影响因子以最新的数值为准</div>
+  	</div>
+
+<div class="row">
+	<nav aria-label="...">
+  <ul class="pager">
+
+    <li class="previous"><a href="page6.html"><span aria-hidden="true">&larr;</span> 上一页</a></li>  
+     <li><span class="label label-primary">第七页</span></li>
+    <li class="next"><a href="page8.html">下一页<span aria-hidden="true">&rarr;</span></a></li>
+  </ul>
+</nav>
+</div>
+		</div>
+	</body>
+</html>

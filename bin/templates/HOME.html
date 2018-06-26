@@ -3,17 +3,59 @@
 	<head>
 		<meta charset="utf-8" />
 		<title>-人事管理平台-</title>
-		<link rel="stylesheet" href="css/bootstrap.css" />
-		<link rel="stylesheet" href="css/style-plus.css" />
+		<link rel="stylesheet" href="../static/tas/css/bootstrap.css" />
+		<link rel="stylesheet" href="../static/tas/css/style-plus.css" />
 	
-		<script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
-        <script type="text/javascript" src="js/bootstrap.min.js"></script>
-        <script type="text/javascript" src="js/JA.js"></script>
+		<script type="text/javascript" src="../static/tas/js/jquery-3.3.1.min.js"></script>
+        <script type="text/javascript" src="../static/tas/js/bootstrap.min.js"></script>
+ <script>
+ 	
+   var css = {left:'1%'};  
+    setInterval(function(){  
+        $('.arrow').animate(css,900,rowBack);  
+    },900);  
+    function rowBack(){  
+        if(css.left==='1%')  
+            css.left='1.5%';  
+        else if(css.left==='1.5%')  
+            css.left='1%';  
+    }  
+
+
+	$(document).ready(	function(){
+   	$('.word-position').fadeTo(3000,1);  
+});
+
+
+	$(document).ready(	function(){
+   $('.arrow').click(function(){$('.ui-dialog').fadeTo(1000,1);});
+});
+
+
+	$(document).ready(	function(){
+   $('.ui-dialog-closebutton').click(function(){$('.ui-dialog').fadeTo(1000,0);});
+});
+
+
+	$(document).ready(	function(){
+   $('.ui-register-dialog-closebutton').click(function(){$('.ui-register-dialog').fadeTo(1000,0);});
+});
+
+
+	$(document).ready(	function(){
+   $("#register").click(function(){
+   	$('.ui-register-dialog').toggle();
+    $('.ui-dialog').fadeTo(500,0);  });
+});
+
+
+
+ </script>
 	</head>
 	<body class="container-fluid">
 	
 		<span class="word-position">
-	    <img  src="img/homepage_word.png" />
+	    <img  src="../static/tas/img/homepage_word.png" />
 				</span>	
 
 	    <a class="arrow" style="color:#f2ebeb;" >JOIN US >></a>

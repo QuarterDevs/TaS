@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>-人事管理平台-</title>
+			<link rel="stylesheet" href="../static/tas/css/bootstrap.css" />
+		<link rel="stylesheet" href="../static/tas/css/right.css" />
+	
+		<script type="text/javascript" src="../static/tas/js/jquery-3.3.1.min.js"></script>
+        <script type="text/javascript" src="../static/tas/js/bootstrap.min.js"></script>
+        <script src="../static/tas/js/bootstrapValidator.min.js"></script> 
+        <link href="../static/tas/css/bootstrapValidator.min.css" rel="stylesheet" />
+        <link type="text/css" rel="stylesheet" href="../static/tas/css/fileinput.min.css" />
+        <script type="text/javascript" src="../static/tas/js/fileinput.min.js"></script>
+        <script type="text/javascript" src="../static/tas/js/zh.js"></script>
+        <script type="text/javascript" src="../static/tas/js/JA.js"></script>
+
+	</head> 
+	<body>
+			<div class="form-position">
+			
+	
+		<div class="row">
+			<div class="panel panel-default">
+            <div class="panel-heading">
+            <h3 class="panel-title">申请学校提供的科研配套经费及使用计划</h3>
+        </div>
+  <div class="panel-body">
+
+  </div>
+   <form class="form-horizontal" id="form5" method="post" action="">
+  
+        <br />
+  	<table class="table table-striped">
+   <tr align="center">
+    <td colspan="7">申请学校提供科研配套经费预算总额及主要用途</td>
+  </tr>
+  <tr>
+    <td colspan="7"><div class="form-group"style="width: 99%; margin-left: 1%;" >
+    			<textarea class="form-control"style="overflow-y: scroll;" rows="20" cols="30"value= {{data["info"]}}  placeholder="nothing"   name="info" ></textarea>
+    	</div></td>
+  </tr>
+  <tr align="center">
+    <td colspan="7">申请学校提供科研配套经费预算明细</td>
+  </tr>
+  <tr align="center">
+    <td colspan="7">业务费（不超过经费预算总额的20%，主要包括印刷费、会议费、差旅费、劳务费、耗材费）</td>
+  </tr>
+  <tr align="center">
+    <td>印刷费</td>
+    <td>会议费</td>
+    <td>差旅费</td>
+    <td>耗材费</td>
+    <td>劳务费</td>
+    <td>其他</td>
+    <td colspan="2">小计</td>
+  </tr>
+  <tr align="center">
+    <td><div class="form-group">
+    <input type="text" style="width: 110px;" class="form-control" name="printing_fee" placeholder="1000" value= {{data["printing_fee"]}}  >
+             </div></td>
+    <td><div class="form-group">
+    <input type="text" style="width: 110px;" class="form-control" name="meeting_fee" placeholder="1000" value= {{data["meeting_fee"]}}  >
+             </div></td>
+    <td><div class="form-group">
+    <input type="text" style="width: 110px;" class="form-control"name="travel_fee" placeholder="1000" value= {{data["travel_fee"]}}  >
+             </div></td>
+    <td><div class="form-group">
+    <input type="text" style="width: 110px;" class="form-control" name="consumables_fee" placeholder="1000"value= {{data["consumables_fee"]}}  >
+             </div></td>
+    <td><div class="form-group">
+    <input type="text" style="width: 110px;" class="form-control" name="labor_fee" placeholder="1000"value= {{data["labor_fee"]}}   >
+             </div></td>
+              <td><div class="form-group">
+    <input type="text" style="width: 110px;" class="form-control" name="other_fee" placeholder="1000" value= {{data["other_fee"]}}   >
+             </div></td>
+    <td colspan="2"><div class="form-group">
+    <input type="text" style="width: 110px;" class="form-control"name="professional_fee_sum" placeholder="6000" type="text" id="textfield" size="30"  value= {{data["professional_fee_sum"]}} >
+             </div></td>
+  </tr>
+  <tr align="center">
+    <td colspan="7">拟购仪器设备费（不低于经费预算总额的80%，主要用于改善必要的科研条件）</td>
+  </tr>
+  <tr align="center">
+    <td>仪器设备名称</td>
+    <td>型号</td>
+    <td>主要用途</td>
+    <td>单价</td>
+    <td>数量</td>
+    <td colspan="2">金额（万元）</td>
+  </tr>
+  <tr align="center">
+    <td><div class="form-group">
+    <input type="text" style="width: 180px;" class="form-control" name="equipment1_name" placeholder="equipment name" value= {{data["equipment1_name"]}}  >
+             </div></td>
+    <td><div class="form-group">
+    <input type="text" style="width: 110px;" class="form-control" name="equipment1_model" placeholder="equipment model" value= {{data["equipment1_model"]}}  >
+             </div></td>
+    <td><div class="form-group">
+    <input type="text" style="width: 150px;" class="form-control"name="equipment1_use" placeholder="equipment use" value= {{data["equipment1_use"]}}   >
+             </div></td>
+    <td><div class="form-group">
+    <input type="text" style="width: 110px;" class="form-control"name="equipment1_price" placeholder="1" value= {{data["equipment1_price"]}}  >
+             </div></td>
+    <td><div class="form-group">
+    <input type="text" style="width: 110px;" class="form-control" name="equipment1_quantity" placeholder="2" value= {{data["equipment1_quantity"]}}   >
+             </div></td>
+    <td colspan="2"><div class="form-group space">
+    <input type="text" style="width: 110px;" class="form-control"name="equipment1_price_sum" placeholder="2" value= {{data["equipment1_price_sum"]}}  >
+             </div></td>
+  </tr>
+   <tr align="center">
+    <td><div class="form-group">
+    <input type="text" style="width: 180px;" class="form-control" name="equipment2_name" placeholder="equipment name" value= {{data["equipment2_name"]}}  >
+             </div></td>
+    <td><div class="form-group">
+    <input type="text" style="width: 110px;" class="form-control" name="equipment2_model" placeholder="equipment model" value= {{data["equipment2_model"]}}  >
+             </div></td>
+    <td><div class="form-group">
+    <input type="text" style="width: 150px;" class="form-control"name="equipment2_use" placeholder="equipment use" value= {{data["equipment2_use"]}}   >
+             </div></td>
+    <td><div class="form-group">
+    <input type="text" style="width: 110px;" class="form-control"name="equipment2_price" placeholder="1" value= {{data["equipment2_price"]}}  >
+             </div></td>
+    <td><div class="form-group">
+    <input type="text" style="width: 110px;" class="form-control" name="equipment2_quantity" placeholder="2" value= {{data["equipment2_quantity"]}}   >
+             </div></td>
+    <td colspan="2"><div class="form-group space">
+    <input type="text" style="width: 110px;" class="form-control"name="equipment2_price_sum" placeholder="2" value= {{data["equipment2_price_sum"]}}  >
+             </div></td>
+  </tr>
+  <tr align="center">
+    <td><div class="form-group">
+    <input type="text" style="width: 180px;" class="form-control" name="equipment3_name" placeholder="equipment name" value= {{data["equipment3_name"]}}  >
+             </div></td>
+    <td><div class="form-group">
+    <input type="text" style="width: 110px;" class="form-control" name="equipment3_model" placeholder="equipment model" value= {{data["equipment3_model"]}}  >
+             </div></td>
+    <td><div class="form-group">
+    <input type="text" style="width: 150px;" class="form-control"name="equipment3_use" placeholder="equipment use" value= {{data["equipment3_use"]}}   >
+             </div></td>
+    <td><div class="form-group">
+    <input type="text" style="width: 110px;" class="form-control"name="equipment3_price" placeholder="1" value= {{data["equipment3_price"]}}  >
+             </div></td>
+    <td><div class="form-group">
+    <input type="text" style="width: 110px;" class="form-control" name="equipment3_quantity" placeholder="2" value= {{data["equipment3_quantity"]}}   >
+             </div></td>
+    <td colspan="2"><div class="form-group space">
+    <input type="text" style="width: 110px;" class="form-control"name="equipment3_price_sum" placeholder="2" value= {{data["equipment3_price_sum"]}}  >
+             </div></td>
+  </tr>
+  <tr align="center">
+    <td><div class="form-group">
+    <input type="text" style="width: 180px;" class="form-control" name="equipment4_name" placeholder="equipment name" value= {{data["equipmen4_name"]}}  >
+             </div></td>
+    <td><div class="form-group">
+    <input type="text" style="width: 110px;" class="form-control" name="equipment4_model" placeholder="equipment model" value= {{data["equipment4_model"]}}  >
+             </div></td>
+    <td><div class="form-group">
+    <input type="text" style="width: 150px;" class="form-control"name="equipment4_use" placeholder="equipment use" value= {{data["equipment4_use"]}}   >
+             </div></td>
+    <td><div class="form-group">
+    <input type="text" style="width: 110px;" class="form-control"name="equipment4_price" placeholder="1" value= {{data["equipment4_price"]}}  >
+             </div></td>
+    <td><div class="form-group">
+    <input type="text" style="width: 110px;" class="form-control" name="equipment4_quantity" placeholder="2" value= {{data["equipment4_quantity"]}}   >
+             </div></td>
+    <td colspan="2"><div class="form-group space">
+    <input type="text" style="width: 110px;" class="form-control"name="equipment4_price_sum" placeholder="2" value= {{data["equipment4_price_sum"]}}  >
+             </div></td>
+  </tr>
+  <tr align="center">
+    <td><div class="form-group">
+    <input type="text" style="width: 180px;" class="form-control" name="equipment5_name" placeholder="equipment name" value= {{data["equipmen5_name"]}}  >
+             </div></td>
+    <td><div class="form-group">
+    <input type="text" style="width: 110px;" class="form-control" name="equipment5_model" placeholder="equipment model" value= {{data["equipment5_model"]}}  >
+             </div></td>
+    <td><div class="form-group">
+    <input type="text" style="width: 150px;" class="form-control"name="equipment5_use" placeholder="equipment use" value= {{data["equipment5_use"]}}   >
+             </div></td>
+    <td><div class="form-group">
+    <input type="text" style="width: 110px;" class="form-control"name="equipment5_price" placeholder="1" value= {{data["equipment5_price"]}}  >
+             </div></td>
+    <td><div class="form-group">
+    <input type="text" style="width: 110px;" class="form-control" name="equipment5_quantity" placeholder="2" value= {{data["equipment5_quantity"]}}   >
+             </div></td>
+    <td colspan="2"><div class="form-group space">
+    <input type="text" style="width: 110px;" class="form-control"name="equipment5_price_sum" placeholder="2" value= {{data["equipment5_price_sum"]}}  >
+             </div></td>
+  </tr>
+    <tr align="center">
+    <td><div class="form-group">
+    <input type="text" style="width: 180px;" class="form-control" name="equipment6_name" placeholder="equipment name" value= {{data["equipmen6_name"]}}  >
+             </div></td>
+    <td><div class="form-group">
+    <input type="text" style="width: 110px;" class="form-control" name="equipment6_model" placeholder="equipment model" value= {{data["equipment6_model"]}}  >
+             </div></td>
+    <td><div class="form-group">
+    <input type="text" style="width: 150px;" class="form-control"name="equipment6_use" placeholder="equipment use" value= {{data["equipment6_use"]}}   >
+             </div></td>
+    <td><div class="form-group">
+    <input type="text" style="width: 110px;" class="form-control"name="equipment6_price" placeholder="1" value= {{data["equipment6_price"]}}  >
+             </div></td>
+    <td><div class="form-group">
+    <input type="text" style="width: 110px;" class="form-control" name="equipment6_quantity" placeholder="2" value= {{data["equipment6_quantity"]}}   >
+             </div></td>
+    <td colspan="2"><div class="form-group space">
+    <input type="text" style="width: 110px;" class="form-control"name="equipment6_price_sum" placeholder="2" value= {{data["equipment6_price_sum"]}}  >
+             </div></td>
+  </tr>
+  <tr align="center">
+    <td><div class="form-group">
+    <input type="text" style="width: 180px;" class="form-control" name="equipment7_name" placeholder="equipment name" value= {{data["equipmen7_name"]}}  >
+             </div></td>
+    <td><div class="form-group">
+    <input type="text" style="width: 110px;" class="form-control" name="equipment7_model" placeholder="equipment model" value= {{data["equipment7_model"]}}  >
+             </div></td>
+    <td><div class="form-group">
+    <input type="text" style="width: 150px;" class="form-control"name="equipment7_use" placeholder="equipment use" value= {{data["equipment7_use"]}}   >
+             </div></td>
+    <td><div class="form-group">
+    <input type="text" style="width: 110px;" class="form-control"name="equipment7_price" placeholder="1" value= {{data["equipment7_price"]}}  >
+             </div></td>
+    <td><div class="form-group">
+    <input type="text" style="width: 110px;" class="form-control" name="equipment7_quantity" placeholder="2" value= {{data["equipment7_quantity"]}}   >
+             </div></td>
+    <td colspan="2"><div class="form-group space">
+    <input type="text" style="width: 110px;" class="form-control"name="equipment1_price_sum" placeholder="2" value= {{data["equipment1_price_sum"]}}  >
+             </div></td>
+  </tr>
+  <tr align="center">
+    <td>小计</td>
+    <td colspan="6"><div class="form-group space">
+    <input type="text" style="width: 150px;" class="form-control"name="equipment_price_sum" placeholder="140000"  value= {{data["equipment_price_sum"]}}   >
+             </div></td>
+  </tr>
+  <tr align="center">
+    <td>合计</td>
+    <td colspan="6"><div class="form-group space">
+    <input type="text" style="width: 150px;" class="form-control"name="all_price_sum" placeholder="146000"value= {{data["all_price_sum"]}}   >
+             </div></td>
+  </tr>
+            </table>
+        </div>
+    	<div class="row">
+    		<br />
+    		 <button type="submit" class="btn btn-default" id="submit5">提交</button>
+    	</div>
+    	<br />
+    	</form>
+  	</div>
+
+<div class="row">
+	<nav aria-label="...">
+  <ul class="pager">
+
+    <li class="previous"><a href="page13.html"><span aria-hidden="true">&larr;</span> 上一页</a></li>  
+     <li><span class="label label-primary">第十四页</span></li>
+    <li class="next"><a href="page15.html">下一页<span aria-hidden="true">&rarr;</span></a></li>
+  </ul>
+</nav>
+</div>
+		</div>
+	</body>
+</html>

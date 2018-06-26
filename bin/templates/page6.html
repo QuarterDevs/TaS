@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>-人事管理平台-</title>
+			<link rel="stylesheet" href="../static/tas/css/bootstrap.css" />
+		<link rel="stylesheet" href="../static/tas/css/right.css" />
+	
+		<script type="text/javascript" src="../static/tas/js/jquery-3.3.1.min.js"></script>
+        <script type="text/javascript" src="../static/tas/js/bootstrap.min.js"></script>
+        <script src="../static/tas/js/bootstrapValidator.min.js"></script> 
+        <link href="../static/tas/css/bootstrapValidator.min.css" rel="stylesheet" />
+        <script type="text/javascript" src="../static/tas/js/JA.js"></script>
+
+	</head> 
+	<body>
+	<div class="form-position">
+			
+	
+		<div class="row">
+			<div class="panel panel-default">
+            <div class="panel-heading">
+            <h3 class="panel-title">近几年申请人重要科研获奖情况</h3>
+        </div>
+  <div class="panel-body">
+
+  </div>
+   <form class="form-horizontal" id="form5" method="post" action="">
+    
+        <div class="row">
+        	<table class="table table-striped">
+             <tr align="center">
+             <td>序号</td>
+               <td>获奖项目名称</td>
+                 <td>奖励名称</td>
+                   <td>奖励等级</td>
+                     <td>授奖单位及国别</td>
+                       <td>奖励年度</td>
+                         <td>排名</td>
+             </tr>
+             <tr>
+             	<td>
+             		 1
+             	</td>
+             <td><div class="form-group space">
+    <input type="text" class="form-control" name="project1_name" placeholder="How to spell 'Hello'" id="textfield" value= {{data["project1_name"]}}   >
+             </div></td>
+    <td><div class="form-group space">
+    <input type="text" class="form-control" name="project1_awarded_name" placeholder="King of eggs"id="textfield" value= {{data["project1_awarded_name"]}} > 
+             </div></td>
+    <td><div class="form-group space">
+    <input type="text" class="form-control"  name="project1_awarded_level"placeholder="School" id="textfield" value= {{data["project1_awarded_level"]}}  >
+             </div></td>
+    <td><div class="form-group space">
+    <input type="text" class="form-control"  name="project1_award_company_and_country" placeholder="Hainan Medical University of China"id="textfield" value= {{data["project1_award_company_and_country"]}}  >
+             </div></td>
+    <td><div class="form-group space">
+    <input type="text" class="form-control" name="project1_awarded_year" placeholder="2014"id="textfield" value= {{data["project1_awarded_year"]}} >
+             </div></td>
+    <td><div class="form-group space">
+    <input type="text" class="form-control" name="project1_rank"placeholder="1" id="textfield"  value= {{data["project1_rank"]}} >
+             </div></td>
+             </tr>
+             <tr>
+   <td>
+             		 2
+             	</td>
+             <td><div class="form-group space">
+    <input type="text" class="form-control" name="project2_name" placeholder="How to spell 'Hello'" id="textfield" value= {{data["project2_name"]}}  >
+             </div></td>
+    <td><div class="form-group space">
+    <input type="text" class="form-control" name="project2_awarded_name" placeholder="King of eggs"id="textfield"  value= {{data["project2_awarded_name"]}}  > 
+             </div></td>
+    <td><div class="form-group space">
+    <input type="text" class="form-control"name="project2_awarded_level"placeholder="School" id="textfield" value= {{data["project2_awarded_level"]}}  >
+             </div></td>
+    <td><div class="form-group space">
+    <input type="text" class="form-control" name="project2_award_company_and_country" placeholder="Hainan Medical University of China"id="textfield" value= {{data["project2_award_company_and_country"]}} >
+             </div></td>
+    <td><div class="form-group space">
+    <input type="text" class="form-control" name="project2_awarded_year" placeholder="2014"id="textfield" value= {{data["project2_awarded_year"]}}   >
+             </div></td>
+    <td><div class="form-group space">
+    <input type="text" class="form-control" name="project2_rank"placeholder="1" id="textfield" value= {{data["project2_rank"]}} >
+             </div></td>
+  </tr>
+  <tr>
+   <td>
+             		 3
+             	</td>
+             <td><div class="form-group space">
+    <input type="text" class="form-control" name="project3_name" placeholder="How to spell 'Hello'" id="textfield" value= {{data["project3_name"]}}  >
+             </div></td>
+    <td><div class="form-group space">
+    <input type="text" class="form-control" name="project3_awarded_name" placeholder="King of eggs"id="textfield" value= {{data["project3_awarded_name"]}} > 
+             </div></td>
+    <td><div class="form-group space">
+    <input type="text" class="form-control"   name="project3_awarded_level"placeholder="School" id="textfield" value= {{data["project3_awarded_level"]}}  >
+             </div></td>
+    <td><div class="form-group space">
+    <input type="text" class="form-control"  name="project3_award_company_and_country" placeholder="Hainan Medical University of China"id="textfield"  value= {{data["project3_award_company_and_country"]}}  >
+             </div></td>
+    <td><div class="form-group space">
+    <input type="text" class="form-control"  name="project3_awarded_year" placeholder="2014"id="textfield"  value= {{data["project3_awarded_year"]}} >
+             </div></td>
+    <td><div class="form-group space">
+    <input type="text" class="form-control"name="project3_rank"placeholder="1" id="textfield"  value= {{data["project3_rank"]}} >
+             </div></td>
+  </tr>
+  <tr>
+   <td>
+             		 4
+             	</td>
+             <td><div class="form-group space">
+    <input type="text" class="form-control" name="project4_name" placeholder="How to spell 'Hello'" id="textfield" value= {{data["project4_name"]}}  >
+             </div></td>
+    <td><div class="form-group space">
+    <input type="text" class="form-control"  name="project4_awarded_name" placeholder="King of eggs"id="textfield"  value= {{data["project4_awarded_name"]}} > 
+             </div></td>
+    <td><div class="form-group space">
+    <input type="text" class="form-control"   name="project4_awarded_level"placeholder="School" id="textfield"  value= {{data["project4_awarded_level"]}} >
+             </div></td>
+    <td><div class="form-group space">
+    <input type="text" class="form-control"name="project4_award_company_and_country" placeholder="Hainan Medical University of China"id="textfield"  value= {{data["project4_award_company_and_country"]}}  >
+             </div></td>
+    <td><div class="form-group space">
+    <input type="text" class="form-control" name="project4_awarded_year" placeholder="2014"id="textfield"  value= {{data["project4_awarded_year"]}} >
+             </div></td>
+    <td><div class="form-group space">
+    <input type="text" class="form-control" name="project4_rank"placeholder="1" id="textfield"  value= {{data["project4_rank"]}} >
+             </div></td>
+  </tr>
+  <tr>
+   <td>
+             		 5
+             	</td>
+             <td><div class="form-group space">
+    <input type="text" class="form-control" name="project5_name" placeholder="How to spell 'Hello'" id="textfield" value= {{data["project5_name"]}}  >
+             </div></td>
+    <td><div class="form-group space">
+    <input type="text" class="form-control"  name="project5_awarded_name" placeholder="King of eggs"id="textfield" value= {{data["project5_awarded_name"]}} > 
+             </div></td>
+    <td><div class="form-group space">
+    <input type="text" class="form-control" name="project5_awarded_level"placeholder="School" id="textfield"  value= {{data["project5_awarded_level"]}}   >
+             </div></td>
+    <td><div class="form-group space">
+    <input type="text" class="form-control"  name="project5_award_company_and_country" placeholder="Hainan Medical University of China"id="textfield" value= {{data["project5_award_company_and_country"]}}  >
+             </div></td>
+    <td><div class="form-group space">
+    <input type="text" class="form-control"   name="project5_awarded_year" placeholder="2014"id="textfield"  value= {{data["project5_awarded_year"]}} >
+             </div></td>
+    <td><div class="form-group space">
+    <input type="text" class="form-control" name="project5_rank"placeholder="1" id="textfield"  value= {{data["project5_rank"]}} >
+             </div></td>
+  </tr>
+  <tr>
+   <td>
+             		 6
+             	</td>
+             <td><div class="form-group space">
+    <input type="text" class="form-control" name="project6_name" placeholder="How to spell 'Hello'" id="textfield" value= {{data["project6_name"]}}  >
+             </div></td>
+    <td><div class="form-group space">
+    <input type="text" class="form-control"name="project6_awarded_name" placeholder="King of eggs"id="textfield"  value= {{data["project6_awarded_name"]}} > 
+             </div></td>
+    <td><div class="form-group space">
+    <input type="text" class="form-control"  name="project6_awarded_level"placeholder="School" id="textfield" value= {{data["project6_awarded_level"]}}  >
+             </div></td>
+    <td><div class="form-group space">
+    <input type="text" class="form-control"  name="project6_award_company_and_country" placeholder="Hainan Medical University of China"id="textfield" value= {{data["project6_award_company_and_country"]}} >
+             </div></td>
+    <td><div class="form-group space">
+    <input type="text" class="form-control"name="project6_awarded_year" placeholder="2014"id="textfield"  value= {{data["project6_awarded_year"]}}  >
+             </div></td>
+    <td><div class="form-group space">
+    <input type="text" class="form-control"  name="project6_rank"placeholder="1" id="textfield"  value= {{data["project6_rank"]}} >
+             </div></td>
+  </tr>
+  <tr>
+   <td>
+             		 7
+             	</td>
+             <td><div class="form-group space">
+    <input type="text" class="form-control" name="project7_name" placeholder="How to spell 'Hello'" id="textfield" value= {{data["project7_name"]}}  >
+             </div></td>
+    <td><div class="form-group space">
+    <input type="text" class="form-control" name="project7_awarded_name" placeholder="King of eggs"id="textfield" value= {{data["project7_awarded_name"]}}  > 
+             </div></td>
+    <td><div class="form-group space">
+    <input type="text" class="form-control"  name="project7_awarded_level"placeholder="School" id="textfield"  value= {{data["project7_awarded_level"]}}  >
+             </div></td>
+    <td><div class="form-group space">
+    <input type="text" class="form-control" name="project7_award_company_and_country" placeholder="Hainan Medical University of China"id="textfield" value= {{data["project7_award_company_and_country"]}} >
+             </div></td>
+    <td><div class="form-group space">
+    <input type="text" class="form-control"  name="project7_awarded_year" placeholder="2014"id="textfield"  value= {{data["project7_awarded_year"]}} >
+             </div></td>
+    <td><div class="form-group space">
+    <input type="text" class="form-control" name="project7_rank"placeholder="1" id="textfield" value= {{data["project7_rank"]}} >
+             </div></td>
+  </tr>
+  <tr>
+    <td>
+             		 8
+             	</td>
+             <td><div class="form-group space">
+    <input type="text" class="form-control" name="project8_name" placeholder="How to spell 'Hello'" id="textfield" value= {{data["project8_name"]}}  >
+             </div></td>
+    <td><div class="form-group space">
+    <input type="text" class="form-control" name="project8_awarded_name" placeholder="King of eggs"id="textfield" value= {{data["project8_awarded_name"]}}  > 
+             </div></td>
+    <td><div class="form-group space">
+    <input type="text" class="form-control"  name="project8_awarded_level"placeholder="School" id="textfield" value= {{data["project8_awarded_level"]}}  >
+             </div></td>
+    <td><div class="form-group space">
+    <input type="text" class="form-control" name="project8_award_company_and_country" placeholder="Hainan Medical University of China"id="textfield"  value= {{data["project8_award_company_and_country"]}}  >
+             </div></td>
+    <td><div class="form-group space">
+    <input type="text" class="form-control" name="project8_awarded_year" placeholder="2014"id="textfield"  value= {{data["project8_awarded_year"]}}  >
+             </div></td>
+    <td><div class="form-group space">
+    <input type="text" class="form-control"name="project8_rank"placeholder="1" id="textfield"  value= {{data["project8_rank"]}}  >
+             </div></td>
+  </tr>
+  <tr>
+  <td>
+             		 9
+             	</td>
+             <td><div class="form-group space">
+    <input type="text" class="form-control" name="project9_name" placeholder="How to spell 'Hello'" id="textfield" value= {{data["project9_name"]}}  >
+             </div></td>
+    <td><div class="form-group space">
+    <input type="text" class="form-control" name="project9_awarded_name" placeholder="King of eggs"id="textfield"  value= {{data["project9_awarded_name"]}} > 
+             </div></td>
+    <td><div class="form-group space">
+    <input type="text" class="form-control"  name="project9_awarded_level"placeholder="School" id="textfield"  value= {{data["project9_awarded_level"]}}  >
+             </div></td>
+    <td><div class="form-group space">
+    <input type="text" class="form-control" name="project9_award_company_and_country" placeholder="Hainan Medical University of China"id="textfield"  value= {{data["project9_award_company_and_country"]}}  >
+             </div></td>
+    <td><div class="form-group space">
+    <input type="text" class="form-control"  name="project9_awarded_year" placeholder="2014"id="textfield"  value= {{data["project9_awarded_year"]}}  >
+             </div></td>
+    <td><div class="form-group space">
+    <input type="text" class="form-control" name="project9_rank"placeholder="1" id="textfield" value= {{data["project9_rank"]}} >
+             </div></td>
+  </tr>
+  <tr>
+  <td>
+             		 10
+             	</td>
+             <td><div class="form-group space">
+    <input type="text" class="form-control" name="project10_name" placeholder="How to spell 'Hello'" id="textfield" value= {{data["project10_name"]}}  >
+             </div></td>
+    <td><div class="form-group space">
+    <input type="text" class="form-control" name="project10_awarded_name" placeholder="King of eggs"id="textfield" value= {{data["project10_awarded_name"]}} > 
+             </div></td>
+    <td><div class="form-group space">
+    <input type="text" class="form-control"   name="project10_awarded_level"placeholder="School" id="textfield" value= {{data["project10_awarded_level"]}}  >
+             </div></td>
+    <td><div class="form-group space">
+    <input type="text" class="form-control" name="project10_award_company_and_country" placeholder="Hainan Medical University of China"id="textfield" value= {{data["project10_award_company_and_country"]}} >
+             </div></td>
+    <td><div class="form-group space">
+    <input type="text" class="form-control" name="project10_awarded_year" placeholder="2014"id="textfield"  value= {{data["project10_awarded_year"]}}  >
+             </div></td>
+    <td><div class="form-group space">
+    <input type="text" class="form-control" name="project10_rank"placeholder="1" id="textfield" value= {{data["project10_rank"]}} >
+             </div></td>
+  </tr>
+            </table>
+        </div>
+    	<div class="row">
+    		<br />
+    		 <button type="submit" class="btn btn-default" id="submit4">提交</button>
+    	</div>
+    	<br />
+    	</form>
+  	</div>
+
+<div class="row">
+	<nav aria-label="...">
+  <ul class="pager">
+
+    <li class="previous"><a href="page5.html"><span aria-hidden="true">&larr;</span> 上一页</a></li>  
+     <li><span class="label label-primary">第六页</span></li>
+    <li class="next"><a href="page7.html">下一页<span aria-hidden="true">&rarr;</span></a></li>
+  </ul>
+</nav>
+</div>
+		</div>
+	</body>
+</html>

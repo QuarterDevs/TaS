@@ -1,98 +1,649 @@
+	 $(function () {
+        $('form').bootstrapValidator({
+
+　　　　　　　　name: 'This value is not valid',
+            　feedbackIcons: {
+                　　　　　　　　valid: 'glyphicon glyphicon-ok',
+                　　　　　　　　invalid: 'glyphicon glyphicon-remove',
+                　　　　　　　　validating: 'glyphicon glyphicon-refresh'
+            　　　　　　　　   },
+            fields: {
+                name: {
+                    message: '用户名验证失败',
+                    validators: {
+                        notEmpty: {
+                            message: '该项不能为空'
+                        }
+                    }
+                },
+                nation: {
+                    validators: {
+                        notEmpty: {
+                            message: '该项不能为空'
+                        }
+                    }
+                },
+                applicant_signatur: {
+                    validators: {
+                        notEmpty: {
+                            message: '该项不能为空'
+                        }
+                    }
+                },
+                 political_status: {
+                 
+                    validators: {
+                        notEmpty: {
+                            message: '该项不能为空'
+                        }
+                    }
+                },
+                
+                doctoral_graduates: {
+                 
+                    validators: {
+                        notEmpty: {
+                            message: '该项不能为空'
+                        }
+                    }
+                },
+                doctoral_students: {
+                 
+                    validators: {
+                        notEmpty: {
+                            message: '该项不能为空'
+                        }
+                    }
+                },
+                master_graduates: {
+                 
+                    validators: {
+                        notEmpty: {
+                            message: '该项不能为空'
+                        }
+                    }
+                },
+                
+                 printing_fee: {
+                 
+                    validators: {
+                        notEmpty: {
+                            message: '该项不能为空'
+                        }
+                    }
+                },
+                 meeting_fee: {
+                 
+                    validators: {
+                        notEmpty: {
+                            message: '该项不能为空'
+                        }
+                    }
+                },
+                travel_fee: {
+                 
+                    validators: {
+                        notEmpty: {
+                            message: '该项不能为空'
+                        }
+                    }
+                },
+                consumables_fee: {
+                 
+                    validators: {
+                        notEmpty: {
+                            message: '该项不能为空'
+                        }
+                    }
+                },
+                 labor_fee: {
+                 
+                    validators: {
+                        notEmpty: {
+                            message: '该项不能为空'
+                        }
+                    }
+                },
+                other_fee: {
+                 
+                    validators: {
+                        notEmpty: {
+                            message: '该项不能为空'
+                        }
+                    }
+                },
+                 professional_fee_sum: {
+                 
+                    validators: {
+                        notEmpty: {
+                            message: '该项不能为空'
+                        }
+                    }
+                },
+                
+                
+                
+                master_students: {
+                 
+                    validators: {
+                        notEmpty: {
+                            message: '该项不能为空'
+                        }
+                    }
+                },
+                 tel: {
+                   
+                    validators: {
+                        notEmpty: {
+                            message: '该项不能为空'
+                        },
+                        numeric: {
+                            message: '电话号码格式有误'
+                        }
+                    }
+                },
+                 e_mail: {
+                
+                    validators: {
+                        notEmpty: {
+                            message: '该项不能为空'
+                        },
+                        emailAddress: {
+                            message: '邮箱地址格式有误'
+                        }
+                    }
+                },
+                 marital_status: {
+             
+                    validators: {
+                        notEmpty: {
+                            message: '该项不能为空'
+                        }
+                    }
+                },
+                paper1_name: {
+             
+                    validators: {
+                        notEmpty: {
+                            message: '至少填一项'
+                        }
+                    }
+                },
+                paper1_published_date: {
+             
+                    validators: {
+                        notEmpty: {
+                            message: '至少填一项'
+                        }
+                    }
+                },
+                
+                equipment1_name: {
+             
+                    validators: {
+                        notEmpty: {
+                            message: '至少填一项'
+                        }
+                    }
+                },
+                equipment1_model: {
+             
+                    validators: {
+                        notEmpty: {
+                            message: '至少填一项'
+                        }
+                    }
+                },
+                equipment1_use: {
+             
+                    validators: {
+                        notEmpty: {
+                            message: '至少填一项'
+                        }
+                    }
+                },
+                equipment1_price: {
+             
+                    validators: {
+                        notEmpty: {
+                            message: '至少填一项'
+                        }
+                    }
+                },
+                equipment1_quantity: {
+             
+                    validators: {
+                        notEmpty: {
+                            message: '至少填一项'
+                        }
+                    }
+                },
+                equipment1_price_sum: {
+             
+                    validators: {
+                        notEmpty: {
+                            message: '至少填一项'
+                        }
+                    }
+                },
+                
+                
+                equipment_price_sum: {
+             
+                    validators: {
+                        notEmpty: {
+                            message: '该项不能为空'
+                        }
+                    }
+                },
+                all_price_sum: {
+             
+                    validators: {
+                        notEmpty: {
+                            message: '该项不能为空'
+                        }
+                    }
+                },
+                
+                
+                
+                working_resume: {
+             
+                    validators: {
+                        notEmpty: {
+                            message: '该项不能为空'
+                        }
+                    }
+                },
+                learning_resume: {
+             
+                    validators: {
+                        notEmpty: {
+                            message: '该项不能为空'
+                        }
+                    }
+                },
+                jobs: {
+             
+                    validators: {
+                        notEmpty: {
+                            message: '该项不能为空'
+                        }
+                    }
+                },
+                identity: {
+             
+                    validators: {
+                        notEmpty: {
+                            message: '该项不能为空'
+                        }
+                    }
+                },
+                working_time: {
+             
+                    validators: {
+                        notEmpty: {
+                            message: '该项不能为空'
+                        }
+                    }
+                },
+                profession: {
+             
+                    validators: {
+                        notEmpty: {
+                            message: '该项不能为空'
+                        }
+                    }
+                },
+                obtained_form: {
+             
+                    validators: {
+                        notEmpty: {
+                            message: '该项不能为空'
+                        }
+                    }
+                },
+               birth_date: {
+             
+                    validators: {
+                        notEmpty: {
+                            message: '该项不能为空'
+                        }
+                    }
+                },
+                file_location: {
+             
+                    validators: {
+                        notEmpty: {
+                            message: '该项不能为空'
+                        }
+                    }
+                },
+                now_working_company: {
+             
+                    validators: {
+                        notEmpty: {
+                            message: '该项不能为空'
+                        }
+                    }
+                },
+                technical_position: {
+             
+                    validators: {
+                        notEmpty: {
+                            message: '该项不能为空'
+                        }
+                    }
+                },
+                degree: {
+             
+                    validators: {
+                        notEmpty: {
+                            message: '该项不能为空'
+                        }
+                    }
+                },
+                political_status: {
+             
+                    validators: {
+                        notEmpty: {
+                            message: '该项不能为空'
+                        }
+                    }
+                },
+                spouse_name: {
+             
+                    validators: {
+                        notEmpty: {
+                            message: '该项不能为空'
+                        }
+                    }
+                },
+              
+                
+                
+                paper1_is_included: {
+             
+                    validators: {
+                        notEmpty: {
+                            message: '至少填一项'
+                        }
+                    }
+                },
+                paper1_impact_factor: {
+             
+                    validators: {
+                        notEmpty: {
+                            message: '至少填一项'
+                        }
+                    }
+                },
+                paper1_sci_iquote_times: {
+             
+                    validators: {
+                        notEmpty: {
+                            message: '至少填一项'
+                        }
+                    }
+                },
+                course1_name: {
+             
+                    validators: {
+                        notEmpty: {
+                            message: '至少填一项'
+                        }
+                    }
+                },
+                course1_object: {
+             
+                    validators: {
+                        notEmpty: {
+                            message: '至少填一项'
+                        }
+                    }
+                },
+                course1_count: {
+             
+                    validators: {
+                        notEmpty: {
+                            message: '至少填一项'
+                        }
+                    }
+                },
+                info: {
+             
+                    validators: {
+                        notEmpty: {
+                            message: '该项不能为空,没有则填"无"'
+                        }
+                    }
+                },
+                 paper1_ssci_iquote_times: {
+             
+                    validators: {
+                        notEmpty: {
+                            message: '至少填一项'
+                        }
+                    }
+                },
+                paper1_cssci_iquote_times: {
+             
+                    validators: {
+                        notEmpty: {
+                            message: '至少填一项'
+                        }
+                    }
+                },
+                
+                
+                 project1_name: {
+             
+                    validators: {
+                        notEmpty: {
+                            message: '至少填一项'
+                        }
+                    }
+                },
+               project1_nature_and_source: {
+             
+                    validators: {
+                        notEmpty: {
+                            message: '至少填一项'
+                        }
+                    }
+                },
+                project1_funding: {
+             
+                    validators: {
+                        notEmpty: {
+                            message: '至少填一项'
+                        }
+                    }
+                },
+                project1_start_date: {
+             
+                    validators: {
+                        notEmpty: {
+                            message: '至少填一项'
+                        }
+                    }
+                },
+                project1_end_date: {
+             
+                    validators: {
+                        notEmpty: {
+                            message: '至少填一项'
+                        }
+                    }
+                },
+                project1_rank: {
+             
+                    validators: {
+                        notEmpty: {
+                            message: '至少填一项'
+                        }
+                    }
+                },
+                 degree_country: {
+             
+                    validators: {
+                        notEmpty: {
+                            message: '该项不能为空'
+                        }
+                    }
+                },
+                address: {
+             
+                    validators: {
+                        notEmpty: {
+                            message: '该项不能为空'
+                        }
+                    }
+                },
+                home_tel: {
+             
+                    validators: {
+                        notEmpty: {
+                            message: '该项不能为空'
+                        },
+                         numeric: {
+                            message: '电话号码格式有误'
+                        }
+                    }
+                },
+                sex: {
+             
+                    validators: {
+                        notEmpty: {
+                            message: '该项不能为空'
+                        }
+                    }
+                },
+                nationality: {
+             
+                    validators: {
+                        notEmpty: {
+                            message: '该项不能为空'
+                        }
+                    }
+                },
+                date_of_birth: {
+             
+                    validators: {
+                        notEmpty: {
+                            message: '该项不能为空'
+                        }
+                    }
+                },
+               final_degree: {
+             
+                    validators: {
+                        notEmpty: {
+                            message: '该项不能为空'
+                        }
+                    }
+                },
+                degree_date: {
+             
+                    validators: {
+                        notEmpty: {
+                            message: '该项不能为空'
+                        }
+                    }
+                },
+                working_time: {
+             
+                    validators: {
+                        notEmpty: {
+                            message: '该项不能为空'
+                        }
+                    }
+                },
+                postal_code: {
+             
+                    validators: {
+                        notEmpty: {
+                            message: '该项不能为空'
+                        },
+                         numeric: {
+                            message: '电话号码格式有误'
+                        }
+                    }
+                },
+                bachelor_date: {
+             
+                    validators: {
+                        notEmpty: {
+                            message: '该项不能为空'
+                        }
+                    }
+                },
+                bachelor_university: {
+             
+                    validators: {
+                        notEmpty: {
+                            message: '该项不能为空'
+                        }
+                    }
+                },
+                bachelor_specialty: {
+             
+                    validators: {
+                        notEmpty: {
+                            message: '该项不能为空'
+                        }
+                    }
+                },
+                final_degree: {
+             
+                    validators: {
+                        notEmpty: {
+                            message: '该项不能为空'
+                        }
+                    }
+                },
+                final_degree: {
+             
+                    validators: {
+                        notEmpty: {
+                            message: '该项不能为空'
+                        }
+                    }
+                },
+                final_degree: {
+             
+                    validators: {
+                        notEmpty: {
+                            message: '该项不能为空'
+                        }
+                    }
+                },
+                final_degree: {
+             
+                    validators: {
+                        notEmpty: {
+                            message: '该项不能为空'
+                        }
+                    }
+                },
+                 applicant_main_value: {
+                    validators: {
+                        notEmpty: {
+                            message: '该项不能为空'
+                        }
+                    }
+                },
+                title: {
+             
+                    validators: {
+                        notEmpty: {
+                            message: '该项不能为空'
+                        }
+                    }
+                }
+            }
+        });
+    });
 
 
-   var css = {left:'1%'};  
-    setInterval(function(){  
-        $('.arrow').animate(css,900,rowBack);  
-    },900);  
-    function rowBack(){  
-        if(css.left==='1%')  
-            css.left='1.5%';  
-        else if(css.left==='1.5%')  
-            css.left='1%';  
-    }  
 
-
-	$(document).ready(	function(){
-   	$('.word-position').fadeTo(3000,1);  
-});
-
-
-	$(document).ready(	function(){
-   $('.arrow').click(function(){$('.ui-dialog').fadeTo(1000,1);});
-});
-
-
-	$(document).ready(	function(){
-   $('.ui-dialog-closebutton').click(function(){$('.ui-dialog').fadeTo(1000,0);});
-});
-
-
-	$(document).ready(	function(){
-   $('.ui-register-dialog-closebutton').click(function(){$('.ui-register-dialog').fadeTo(1000,0);});
-});
-
-
-	$(document).ready(	function(){
-   $("#register").click(function(){
-   	$('.ui-register-dialog').toggle();
-    $('.ui-dialog').fadeTo(500,0);  });
-});
-
-
-
-function validate_required(field,alerttxt)
-{
-with (field)
-  {
-  if (value==null||value=="") 
-    {alert(alerttxt); window.history.back(-1);  return false}
-  else {return true}
-  }
-}
-
-function validate_form(thisform)
-{
-with (thisform) 
-  {
-  if (validate_required(user,"用户名不能为空")==false)
-    {user.focus(); return false}
-   if (validate_required(pwd,"请输入密码")==false)
-    {pwd.focus(); return false}
-  
-  }
-}
-function validate_form2(thisform)
-{
-with (thisform)
-  {
-    if (validate_required(new_user,"用户名不能为空")==false)
-    {new_user.focus();return false}
-   if (validate_required(new_password,"请输入密码")==false)
-    {new_password.focus();return false}
-    if (validate_required(check_password,"请输入确认密码")==false)
-    {check_password.focus();return false}
-    isSame();
-  
-  }
-
-}
-
-function isSame(){
-	 var pwd1 = document.getElementById("new_password").value;
-     var pwd2 = document.getElementById("check_password").value;
-<!-- 对比两次输入的密码 -->
-     if (pwd1 != pwd2) {
-       alert("新密码和确认新密码不一致，请重新输入！");
-        return;
-}
-}
-
-function validate() {
-              var pwd1 = document.getElementById("new_password").value;
-              var pwd2 = document.getElementById("check_password").value;
-		<!-- 对比两次输入的密码 -->
-           if (pwd1 != pwd2) {
-             alert("新密码和确认新密码不一致，请重新输入！");
-             return;
-}
-          }

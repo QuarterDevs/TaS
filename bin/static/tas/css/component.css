@@ -1,0 +1,170 @@
+/* Common styles */
+
+.pricing {
+	display: -webkit-flex;
+	display: flex;
+	-webkit-flex-wrap: wrap;
+	flex-wrap: wrap;
+	-webkit-justify-content: center;
+	justify-content: center;
+	width: 100%;
+	margin: 0 auto 3em;
+}
+
+.pricing__item {
+	position: relative;
+	display: -webkit-flex;
+	display: flex;
+	-webkit-flex-direction: column;
+	flex-direction: column;
+	-webkit-align-items: stretch;
+	align-items: stretch;
+	text-align: left;
+	-webkit-flex: 0 1 5100px;
+	flex: 0 1 510px;  border-radius: 25px;box-shadow:4px 4px 10px #878787;
+}
+h5{
+ 	font-family: "微软雅黑";
+    font-size: 1.2em; font-weight: bold;
+}
+input{
+	font-family: "微软雅黑";
+    font-size: 0.8em; color:#366097;
+}
+label{
+	font-family: "微软雅黑"; 
+}
+.pricing__feature-list {
+	text-align: left;
+}
+
+.pricing__action {
+	color: inherit;
+	border: none;
+	background: none;
+}
+
+.pricing__action:focus {
+	outline: none;
+}
+
+/* Individual styles */
+textarea{ resize:none;}
+
+/* Jinpa */
+.pricing--jinpa .pricing__item {
+	font-family: 'Sahitya', serif;
+	margin: 1.5em 0;
+	padding: 2em;
+	cursor: default;
+	color: #fff;
+	border: 1px dashed #E6E6E6;
+	-webkit-transition: background-color 0.6s, color 0.3s;
+	transition: background-color 0.6s, color 0.3s;
+}
+.photo{
+	margin: 0em;
+	padding: 0em;
+}
+.text{
+
+}
+.pricing--jinpa .pricing__item:nth-child(2) {
+	border-right: none;
+	border-left: none;
+}
+
+.pricing--jinpa .pricing__item:hover {
+	color: #415058;
+	background: #f0f5f9;
+}
+
+.pricing--jinpa .pricing__title {
+	font-size: 2em;
+	width: 150%;
+	margin: 0;
+	padding: 0;
+}
+
+.pricing--jinpa .pricing__price {
+	font-size: 1.45em;
+	font-weight: bold;
+	line-height: 95px;
+
+	margin: 1.15em auto 1em;
+	border-radius: 50%;
+	background: #ea716e;
+	-webkit-transition: color 0.3s, background 0.3s;
+	transition: color 0.3s, background 0.3s;
+}
+
+.pricing--jinpa .pricing__item:first-child .pricing__price {
+	background: #eac36e;
+}
+
+.pricing--jinpa .pricing__item:nth-child(2) .pricing__price {
+	background: #eaa36e;
+}
+
+.pricing--jinpa .pricing__item:hover .pricing__price {
+	color: #fff;
+	background: #82C57E;
+}
+
+.pricing--jinpa .pricing__sentence {
+	font-weight: bold;
+}
+
+.pricing--jinpa .pricing__feature-list {
+	margin: 0;
+	padding: 1em 1em 2em 1em;
+	list-style: none;
+	text-align: center;
+}
+
+.pricing--jinpa .pricing__action {
+	font-weight: bold;
+	margin-top: auto;
+	padding: 0.75em 2em;
+	opacity: 0;
+	color: #fff;
+	background: #c9d6de;
+	-webkit-transition: -webkit-transform 0.3s, opacity 0.3s;
+	transition: transform 0.3s, opacity 0.3s;
+	-webkit-transform: translate3d(0, -15px, 0);
+	transform: translate3d(0, -15px, 0);
+}
+
+.pricing--jinpa .pricing__item:hover .pricing__action {
+	opacity: 1;
+	-webkit-transform: translate3d(0, 0, 0);
+	transform: translate3d(0, 0, 0);
+}
+
+.pricing--jinpa .pricing__action:hover,
+.pricing--jinpa .pricing__action:focus {
+	background: #415058;
+}
+
+@media screen and (max-width: 60em) {
+	.pricing--jinpa .pricing__item {
+		max-width: none;
+		width: 100%; 
+		flex: none;
+	}
+	.pricing--jinpa .pricing__item:nth-child(2) {
+		border: 1px solid #fff;
+	}
+}
+.xian {
+       height: 1px; 
+       margin-top: 40px;
+       text-align: center; 
+       border-top: 1px solid #e2e2e2;
+}
+.txt{ 
+     position: relative;
+     top:-13px; font-family: "微软雅黑";
+ font-size: 1.2em; font-weight: bold; 
+     display: inline-block;
+}

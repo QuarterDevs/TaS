@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>-人事管理平台-</title>
+			<link rel="stylesheet" href="../static/tas/css/bootstrap.css" />
+		<link rel="stylesheet" href="../static/tas/css/right.css" />
+	
+		<script type="text/javascript" src="../static/tas/js/jquery-3.3.1.min.js"></script>
+        <script type="text/javascript" src="../static/tas/js/bootstrap.min.js"></script>
+        <script type="text/javascript" src="../static/tas/js/JA.js"></script>
+        <script src="../static/tas/js/bootstrapValidator.min.js"></script> 
+        <link href="../static/tas/css/bootstrapValidator.min.css" rel="stylesheet" />
+        <link type="text/css" rel="stylesheet" href="../static/tas/css/fileinput.min.css" />
+        <script type="text/javascript" src="../static/tas/js/fileinput.min.js"></script>
+        <script type="text/javascript" src="../static/tas/js/zh.js"></script>
+        
+  
+    <script>
+  //初始化fileinput控件（第一次初始化）  
+  function initFileInput(ctrlName, uploadUrl) {      
+      var control = $('#' + ctrlName);   
+        
+  
+      control.fileinput({  
+          language: 'zh', //设置语言  
+          uploadUrl: uploadUrl, //上传的地址  
+          allowedFileExtensions : ['jpg', 'png','gif'],//接收的文件后缀  
+          showUpload: true, //是否显示上传按钮  
+          showCaption: false,//是否显示标题  
+          browseClass: "btn btn-primary", //按钮样式               
+          previewFileIcon: "<i class='glyphicon glyphicon-king'></i>",   
+          uploadAsync: false,  
+          uploadExtraData:function (previewId, index) {  
+                var obj = {};  
+                $('#addForm').find('input').each(function() {  
+                    var id = $(this).attr('id'), val = $(this).val();  
+                    obj[id] = val;  
+                });  
+                return obj;  
+            }  
+       });   
+}  
+  
+ //初始化fileinput  
+initFileInput("fileup", "http://localhost:8080/web/guita/addGuitaInfo.action");  
+        </script>
+
+	</head>
+	<body>
+			<div class="form-position">
+			
+	
+		<div class="row">
+			<div class="panel panel-default">
+            <div class="panel-heading">
+            <h3 class="panel-title">配偶情况</h3>
+        </div>
+  <div class="panel-body">
+    <form class="form-horizontal" id="form3" method="post" action="">
+<div class="row">
+	<div class="">
+		
+
+	<div class="col-md-4 space">
+		<div class="form-group">
+    <label for="exampleInputEmail1">姓名</label>
+    <input type="text" class="form-control" name="name" id="name" placeholder="Tom"  value= {{data["name"]}} >
+  </div>
+  <div class="form-group">
+    <label for="exampleInputPassword1">配偶姓名</label>
+    <input type="text" class="form-control" name="spouse_name" placeholder="Marry"  value= {{data["spouse_name"]}}  >
+  </div>
+  		<div class="form-group">
+    <label for="exampleInputEmail1">政治面貌</label>
+    <input type="text" class="form-control" name="political_status" id="textfield" placeholder="people" value= {{data["political_status"]}} >
+  </div>
+  <div class="form-group">
+    <label for="exampleInputPassword1">学历学位</label>
+    <input type="text" class="form-control" name="degree" placeholder="master" value= {{data["degree"]}}  >
+  </div>
+  		<div class="form-group">
+    <label for="exampleInputEmail1">现任专业技术职务</label>
+    <input type="text" class="form-control"  name="technical_position" placeholder="Data Scientist" value= {{data["technical_position"]}}  >
+  </div>
+  <div class="form-group">
+    <label for="exampleInputPassword1">现工作单位</label>
+    <input type="text" class="form-control" name="now_working_company" placeholder="Hainan Medical University"  value= {{data["now_working_company"]}} >
+  </div>
+  		<div class="form-group">
+    <label for="exampleInputEmail1">联系方式</label>
+    <input type="text" class="form-control"name="tel" placeholder="17383722648"  value= {{data["tel"]}} >
+  </div>
+ 	<div class="form-group">
+    <label for="exampleInputEmail1">档案所在地</label>
+    <input type="text" class="form-control" name="file_location" placeholder="海南省海口市龙华区学院路3号"  value= {{data["file_location"]}}  >
+  </div>
+  
+ 
+	</div>
+		</div>
+	
+	
+	
+	<div class="col-md-4 space">
+		 <div class="form-group">
+    <label for="exampleInputPassword1">性别</label>
+    <input type="text" class="form-control" name="sex" placeholder="female" value= {{data["sex"]}}  >
+  </div>
+
+		  <div class="form-group">
+    <label for="exampleInputPassword1">出生年月</label>
+    <input type="date" class="form-control" name="birth_date" placeholder="1980/08/08" value= {{data["birth_date"]}}  >
+  </div>
+		<div class="form-group">
+    <label for="exampleInputEmail1">取得形式（全日制、成教、自考等）</label>
+    <input type="text" class="form-control"name="obtained_form" placeholder="full-time"   value= {{data["obtained_form"]}} >
+  </div>
+  <div class="form-group">
+    <label for="exampleInputPassword1">所学专业</label>
+    <input type="text" class="form-control"name="profession" placeholder="Computer Science" value= {{data["profession"]}} >
+  </div>
+
+	<div class="form-group">
+    <label for="exampleInputEmail1">任职时间</label>
+    <input type="text" class="form-control"name="working_time" placeholder="5years" value= {{data["working_time"]}} >
+  </div>
+  <div class="form-group">
+    <label for="exampleInputPassword1">身份（干部或工人）</label>
+    <input type="text" class="form-control"name="identity" placeholder="worker"value= {{data["identity"]}}  >
+  </div>
+
+	<div class="form-group">
+    <label for="exampleInputEmail1">工作岗位</label>
+    <input type="text" class="form-control"name="jobs" placeholder="Data Scientist"  value= {{data["jobs"]}} >
+  </div>
+
+
+
+		</div>
+	
+	<div class="col-md-4">
+	
+      
+     <div class="input-group" style="width:90%; height:30%; margin-top: 10px;">   
+     	<label for="exampleInputFile">照片</label>
+<input id="fileup" type="file" class="file"/>  
+     </div>   
+ 
+
+    </div>  
+ 
+
+ 
+	</div>
+
+<div class="row">
+		 <h5 class="page-header">学习简历</h5>
+		 <div class="form-group"style="width: 99%; margin-left: 1%;" >
+    			<textarea class="form-control"style="overflow-y: scroll;" rows="20" cols="30"name="learning_resume" placeholder="something in here" value= {{data["learning_resume"]}} ></textarea>
+    	</div>
+		 
+		 
+
+	</div>
+<div class="row">
+	<br /><br />
+		 <h4 class="page-header">工作简历</h4>
+		 <div class="form-group"style="width: 99%; margin-left: 1%;" >
+    			<textarea class="form-control"style="overflow-y: scroll;" rows="20" cols="30"name="working_resume" placeholder="something in here"value= {{data["working_resume"]}} ></textarea>
+    	</div>
+		  </div>
+		</div>
+		<br />
+		   <button type="submit" class="btn btn-default" id="submit5">提交</button>
+</form>
+
+  </div>
+  	</div>
+
+<div class="row">
+	<nav aria-label="...">
+  <ul class="pager">
+
+    <li class="previous"><a href="page14.html"><span aria-hidden="true">&larr;</span> 上一页</a></li>  
+     <li><span class="label label-primary">第十五页</span></li>
+    <li class="next"><a href="page16.html">下一页<span aria-hidden="true">&rarr;</span></a></li>
+  </ul>
+</nav>
+</div>
+		</div>
+	</body>
+</html>

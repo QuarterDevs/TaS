@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>-人事管理平台-</title>
+			<link rel="stylesheet" href="../static/tas/css/bootstrap.css" />
+		<link rel="stylesheet" href="../static/tas/css/right.css" />
+	
+		<script type="text/javascript" src="../static/tas/js/jquery-3.3.1.min.js"></script>
+        <script type="text/javascript" src="../static/tas/js/bootstrap.min.js"></script>
+        <script src="../static/tas/js/bootstrapValidator.min.js"></script> 
+        <link href="../static/tas/css/bootstrapValidator.min.css" rel="stylesheet" />
+        <script type="text/javascript" src="../static/tas/js/JA.js"></script>
+
+	</head> 
+	<body>
+			<div class="form-position">
+			
+	
+		<div class="row">
+			<div class="panel panel-default">
+            <div class="panel-heading">
+            <h3 class="panel-title">申请人近五年主要学术成就情况</h3>
+        </div>
+  <div class="panel-body">
+   <p>近五年申请人承担主要科研项目</p>
+
+  </div>
+   <form class="form-horizontal" id="form5" method="post" action="">
+    
+        <div class="row">
+        	<table class="table table-striped">
+             <tr align="center">
+             <td>序号</td>
+               <td>项目名称</td>
+                 <td>项目性质及来源</td>
+                   <td>项目经费</td>
+                     <td>起始年度</td>
+                       <td>终止年度</td>
+                         <td>排序</td>
+             </tr>
+             <tr>
+             	<td>
+             		 1
+             	</td>
+             <td><div class="form-group space">
+    <input type="text" class="form-control" name="project1_name" placeholder="How to spell 'Hello'" id="textfield" value= {{data["project1_name"]}}  >
+             </div></td>
+    <td><div class="form-group space">
+    <input type="text" class="form-control" name="project1_nature_and_source" placeholder="very important and comes from dreaming"id="textfield" value= {{data["project1_nature_and_source"]}} > 
+             </div></td>
+    <td><div class="form-group space">
+    <input type="text" class="form-control"  name="project1_funding"placeholder="$1" id="textfield" value= {{data["project1_funding"]}}  >
+             </div></td>
+    <td><div class="form-group space">
+    <input type="text" class="form-control"  name="project1_start_date" placeholder="2012/01/01"id="textfield" value= {{data["project1_start_date"]}}  >
+             </div></td>
+    <td><div class="form-group space">
+    <input type="text" class="form-control"  name="project1_end_date" placeholder="2013/01/01"id="textfield" value= {{data["project1_end_date"]}}  >
+             </div></td>
+    <td><div class="form-group space">
+    <input type="text" class="form-control" name="project1_rank"placeholder="1" id="textfield" value= {{data["project1_rank"]}} >
+             </div></td>
+             </tr>
+             <tr>
+   <td>
+             		 2
+             	</td>
+             <td><div class="form-group space">
+    <input type="text" class="form-control" name="project2_name" placeholder="How to spell 'Hello'" id="textfield" value= {{data["project2_name"]}}  >
+             </div></td>
+    <td><div class="form-group space">
+    <input type="text" class="form-control" name="project2_nature_and_source" placeholder="very important and comes from dreaming"id="textfield" value= {{data["project2_nature_and_source"]}} > 
+             </div></td>
+    <td><div class="form-group space">
+    <input type="text" class="form-control"  name="project2_funding"placeholder="$1" id="textfield" value= {{data["project2_funding"]}}  >
+             </div></td>
+    <td><div class="form-group space">
+    <input type="text" class="form-control"  name="project2_start_date" placeholder="2012/01/01"id="textfield" value= {{data["project2_start_date"]}}  >
+             </div></td>
+    <td><div class="form-group space">
+    <input type="text" class="form-control"  name="project2_end_date" placeholder="2013/01/01"id="textfield" value= {{data["project2_end_date"]}}  >
+             </div></td>
+    <td><div class="form-group space">
+    <input type="text" class="form-control" name="project2_rank"placeholder="1" id="textfield" value= {{data["project2_rank"]}} >
+             </div></td>
+  </tr>
+  <tr>
+   <td>
+             		 3
+             	</td>
+             <td><div class="form-group space">
+    <input type="text" class="form-control" name="project3_name" placeholder="How to spell 'Hello'" id="textfield" value= {{data["project3_name"]}}  >
+             </div></td>
+    <td><div class="form-group space">
+    <input type="text" class="form-control" name="project3_nature_and_source" placeholder="very important and comes from dreaming"id="textfield" value= {{data["project3_nature_and_source"]}} > 
+             </div></td>
+    <td><div class="form-group space">
+    <input type="text" class="form-control"  name="project3_funding"placeholder="$1" id="textfield" value= {{data["project3_funding"]}}  >
+             </div></td>
+    <td><div class="form-group space">
+    <input type="text" class="form-control"  name="project3_start_date" placeholder="2012/01/01"id="textfield" value= {{data["project3_start_date"]}}  >
+             </div></td>
+    <td><div class="form-group space">
+    <input type="text" class="form-control"  name="project3_end_date" placeholder="2013/01/01"id="textfield" value= {{data["project3_end_date"]}}  >
+             </div></td>
+    <td><div class="form-group space">
+    <input type="text" class="form-control" name="project3_rank"placeholder="1" id="textfield" value= {{data["project3_rank"]}} >
+             </div></td>
+  </tr>
+  <tr>
+   <td>
+             		 4
+             	</td>
+             <td><div class="form-group space">
+    <input type="text" class="form-control" name="project4_name" placeholder="How to spell 'Hello'" id="textfield" value= {{data["project4_name"]}}  >
+             </div></td>
+    <td><div class="form-group space">
+    <input type="text" class="form-control" name="project4_nature_and_source" placeholder="very important and comes from dreaming"id="textfield" value= {{data["project4_nature_and_source"]}} > 
+             </div></td>
+    <td><div class="form-group space">
+    <input type="text" class="form-control"  name="project4_funding"placeholder="$1" id="textfield" value= {{data["project4_funding"]}}  >
+             </div></td>
+    <td><div class="form-group space">
+    <input type="text" class="form-control"  name="project4_start_date" placeholder="2012/01/01"id="textfield" value= {{data["project4_start_date"]}}  >
+             </div></td>
+    <td><div class="form-group space">
+    <input type="text" class="form-control"  name="project4_end_date" placeholder="2013/01/01"id="textfield" value= {{data["project4_end_date"]}}  >
+             </div></td>
+    <td><div class="form-group space">
+    <input type="text" class="form-control" name="project4_rank"placeholder="1" id="textfield" value= {{data["project4_rank"]}} >
+             </div></td>
+  </tr>
+  <tr>
+   <td>
+             		 5
+             	</td>
+             <td><div class="form-group space">
+    <input type="text" class="form-control" name="project5_name" placeholder="How to spell 'Hello'" id="textfield" value= {{data["project5_name"]}}  >
+             </div></td>
+    <td><div class="form-group space">
+    <input type="text" class="form-control" name="project5_nature_and_source" placeholder="very important and comes from dreaming"id="textfield" value= {{data["project5_nature_and_source"]}} > 
+             </div></td>
+    <td><div class="form-group space">
+    <input type="text" class="form-control"  name="project5_funding"placeholder="$1" id="textfield" value= {{data["project5_funding"]}}  >
+             </div></td>
+    <td><div class="form-group space">
+    <input type="text" class="form-control"  name="project5_start_date" placeholder="2012/01/01"id="textfield" value= {{data["project5_start_date"]}}  >
+             </div></td>
+    <td><div class="form-group space">
+    <input type="text" class="form-control"  name="project5_end_date" placeholder="2013/01/01"id="textfield" value= {{data["project5_end_date"]}}  >
+             </div></td>
+    <td><div class="form-group space">
+    <input type="text" class="form-control" name="project5_rank"placeholder="1" id="textfield" value= {{data["project5_rank"]}} >
+             </div></td>
+  </tr>
+  <tr>
+   <td>
+             		 6
+             	</td>
+             <td><div class="form-group space">
+    <input type="text" class="form-control" name="project6_name" placeholder="How to spell 'Hello'" id="textfield" value= {{data["project6_name"]}}  >
+             </div></td>
+    <td><div class="form-group space">
+    <input type="text" class="form-control" name="project6_nature_and_source" placeholder="very important and comes from dreaming"id="textfield" value= {{data["project6_nature_and_source"]}} > 
+             </div></td>
+    <td><div class="form-group space">
+    <input type="text" class="form-control"  name="project6_funding"placeholder="$1" id="textfield" value= {{data["project6_funding"]}}  >
+             </div></td>
+    <td><div class="form-group space">
+    <input type="text" class="form-control"  name="project6_start_date" placeholder="2012/01/01"id="textfield" value= {{data["project6_start_date"]}}  >
+             </div></td>
+    <td><div class="form-group space">
+    <input type="text" class="form-control"  name="project6_end_date" placeholder="2013/01/01"id="textfield" value= {{data["project6_end_date"]}}  >
+             </div></td>
+    <td><div class="form-group space">
+    <input type="text" class="form-control" name="project6_rank"placeholder="1" id="textfield" value= {{data["project6_rank"]}} >
+             </div></td>
+  </tr>
+  <tr>
+   <td>
+             		 7
+             	</td>
+             <td><div class="form-group space">
+    <input type="text" class="form-control" name="project7_name" placeholder="How to spell 'Hello'" id="textfield" value= {{data["project7_name"]}}  >
+             </div></td>
+    <td><div class="form-group space">
+    <input type="text" class="form-control" name="project7_nature_and_source" placeholder="very important and comes from dreaming"id="textfield" value= {{data["project7_nature_and_source"]}} > 
+             </div></td>
+    <td><div class="form-group space">
+    <input type="text" class="form-control"  name="project7_funding"placeholder="$1" id="textfield" value= {{data["project7_funding"]}}  >
+             </div></td>
+    <td><div class="form-group space">
+    <input type="text" class="form-control"  name="project7_start_date" placeholder="2012/01/01"id="textfield" value= {{data["project7_start_date"]}}  >
+             </div></td>
+    <td><div class="form-group space">
+    <input type="text" class="form-control"  name="project7_end_date" placeholder="2013/01/01"id="textfield" value= {{data["project7_end_date"]}}  >
+             </div></td>
+    <td><div class="form-group space">
+    <input type="text" class="form-control" name="project7_rank"placeholder="1" id="textfield" value= {{data["project7_rank"]}} >
+             </div></td>
+  </tr>
+  <tr>
+    <td>
+             		 8
+             	</td>
+             <td><div class="form-group space">
+    <input type="text" class="form-control" name="project8_name" placeholder="How to spell 'Hello'" id="textfield" value= {{data["project8_name"]}}  >
+             </div></td>
+    <td><div class="form-group space">
+    <input type="text" class="form-control" name="project8_nature_and_source" placeholder="very important and comes from dreaming"id="textfield" value= {{data["project8_nature_and_source"]}} > 
+             </div></td>
+    <td><div class="form-group space">
+    <input type="text" class="form-control"  name="project8_funding"placeholder="$1" id="textfield" value= {{data["project8_funding"]}}  >
+             </div></td>
+    <td><div class="form-group space">
+    <input type="text" class="form-control"  name="project8_start_date" placeholder="2012/01/01"id="textfield" value= {{data["project8_start_date"]}}  >
+             </div></td>
+    <td><div class="form-group space">
+    <input type="text" class="form-control"  name="project8_end_date" placeholder="2013/01/01"id="textfield" value= {{data["project8_end_date"]}}  >
+             </div></td>
+    <td><div class="form-group space">
+    <input type="text" class="form-control" name="project8_rank"placeholder="1" id="textfield" value= {{data["project8_rank"]}} >
+             </div></td>
+  </tr>
+  <tr>
+  <td>
+             		 9
+             	</td>
+             <td><div class="form-group space">
+    <input type="text" class="form-control" name="project9_name" placeholder="How to spell 'Hello'" id="textfield" value= {{data["project9_name"]}}  >
+             </div></td>
+    <td><div class="form-group space">
+    <input type="text" class="form-control" name="project9_nature_and_source" placeholder="very important and comes from dreaming"id="textfield" value= {{data["project9_nature_and_source"]}} > 
+             </div></td>
+    <td><div class="form-group space">
+    <input type="text" class="form-control"  name="project9_funding"placeholder="$1" id="textfield" value= {{data["project9_funding"]}}  >
+             </div></td>
+    <td><div class="form-group space">
+    <input type="text" class="form-control"  name="project9_start_date" placeholder="2012/01/01"id="textfield" value= {{data["project9_start_date"]}}  >
+             </div></td>
+    <td><div class="form-group space">
+    <input type="text" class="form-control"  name="project9_end_date" placeholder="2013/01/01"id="textfield" value= {{data["project9_end_date"]}}  >
+             </div></td>
+    <td><div class="form-group space">
+    <input type="text" class="form-control" name="project9_rank"placeholder="1" id="textfield" value= {{data["project9_rank"]}} >
+             </div></td>
+  </tr>
+  <tr>
+  <td>
+             		 10
+             	</td>
+             <td><div class="form-group space">
+    <input type="text" class="form-control" name="project10_name" placeholder="How to spell 'Hello'" id="textfield" value= {{data["project10_name"]}}  >
+             </div></td>
+    <td><div class="form-group space">
+    <input type="text" class="form-control" name="project10_nature_and_source" placeholder="very important and comes from dreaming"id="textfield" value= {{data["project10_nature_and_source"]}} > 
+             </div></td>
+    <td><div class="form-group space">
+    <input type="text" class="form-control"  name="project10_funding"placeholder="$1" id="textfield" value= {{data["project10_funding"]}}  >
+             </div></td>
+    <td><div class="form-group space">
+    <input type="text" class="form-control"  name="project10_start_date" placeholder="2012/01/01"id="textfield" value= {{data["project10_start_date"]}}  >
+             </div></td>
+    <td><div class="form-group space">
+    <input type="text" class="form-control"  name="project10_end_date" placeholder="2013/01/01"id="textfield" value= {{data["project10_end_date"]}}  >
+             </div></td>
+    <td><div class="form-group space">
+    <input type="text" class="form-control" name="project10_rank"placeholder="1" id="textfield" value= {{data["project10_rank"]}} >
+             </div></td>
+  </tr>
+            </table>
+        </div>
+    	<div class="row">
+    		<br />
+    		 <button type="submit" class="btn btn-default" id="submit4">提交</button>
+    	</div>
+    	<br />
+    	</form>
+  	</div>
+
+<div class="row">
+	<nav aria-label="...">
+  <ul class="pager">
+
+    <li class="previous"><a href="page4.html"><span aria-hidden="true">&larr;</span> 上一页</a></li> 
+    <li><span class="label label-primary">第五页</span></li> 
+    <li class="next"><a href="page6.html">下一页<span aria-hidden="true">&rarr;</span></a></li>
+  </ul>
+</nav>
+</div>
+		</div>
+	</body>
+</html>

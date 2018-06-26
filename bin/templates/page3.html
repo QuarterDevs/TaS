@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>-人事管理平台-</title>
+			<link rel="stylesheet" href="../static/tas/css/bootstrap.css" />
+		<link rel="stylesheet" href="../static/tas/css/right.css" />
+	
+		<script type="text/javascript" src="../static/tas/js/jquery-3.3.1.min.js"></script>
+        <script type="text/javascript" src="../static/tas/js/bootstrap.min.js"></script>
+        <script type="text/javascript" src="../static/tas/js/JA.js"></script>
+        <script src="../static/tas/js/bootstrapValidator.min.js"></script> 
+        <link href="../static/tas/css/bootstrapValidator.min.css" rel="stylesheet" />
+        <link type="text/css" rel="stylesheet" href="../static/tas/css/fileinput.min.css" />
+        <script type="text/javascript" src="../static/tas/js/fileinput.min.js"></script>
+        <script type="text/javascript" src="../static/tas/js/zh.js"></script>
+        
+  
+    <script>
+  //初始化fileinput控件（第一次初始化）  
+  function initFileInput(ctrlName, uploadUrl) {      
+      var control = $('#' + ctrlName);   
+        
+  
+      control.fileinput({  
+          language: 'zh', //设置语言  
+          uploadUrl: uploadUrl, //上传的地址  
+          allowedFileExtensions : ['jpg', 'png','gif'],//接收的文件后缀  
+          showUpload: true, //是否显示上传按钮  
+          showCaption: false,//是否显示标题  
+          browseClass: "btn btn-primary", //按钮样式               
+          previewFileIcon: "<i class='glyphicon glyphicon-king'></i>",   
+          uploadAsync: false,  
+          uploadExtraData:function (previewId, index) {  
+                var obj = {};  
+                $('#addForm').find('input').each(function() {  
+                    var id = $(this).attr('id'), val = $(this).val();  
+                    obj[id] = val;  
+                });  
+                return obj;  
+            }  
+       });   
+}  
+  
+ //初始化fileinput  
+initFileInput("fileup", "http://localhost:8080/web/guita/addGuitaInfo.action");  
+        </script>
+
+	</head>
+	<body>
+		<div class="form-position">
+			
+	
+		<div class="row">
+			<div class="panel panel-default">
+            <div class="panel-heading">
+            <h3 class="panel-title">申请人基本信息（除指定文种外，均用中文或英文填写）</h3>
+        </div>
+  <div class="panel-body">
+    <form class="form-horizontal" id="form3" method="post" action="">
+<div class="row">
+	<div class="">
+		
+
+	<div class="col-md-4 space">
+		<div class="form-group">
+    <label for="exampleInputEmail1">姓名</label>
+    <input type="text" class="form-control" name="name" id="name" placeholder="Tom"  value= {{data["name"]}} >
+  </div>
+  <div class="form-group">
+    <label for="exampleInputPassword1">民族</label>
+    <input type="text" class="form-control" name="nation" id="textfield"placeholder="汉族" value= {{data["nation"]}}  >
+  </div>
+  		<div class="form-group">
+    <label for="exampleInputEmail1">政治面貌</label>
+    <input type="text" class="form-control" name="political_status" id="textfield" placeholder="people" value= {{data["political_status"]}} >
+  </div>
+  <div class="form-group">
+    <label for="exampleInputPassword1">婚姻状况</label>
+    <input type="text" class="form-control"  name="marital_status" id="textfield"placeholder="married" value= {{data["marital_status"]}}  >
+  </div>
+  		<div class="form-group">
+    <label for="exampleInputEmail1">获学位国别</label>
+    <input type="text" class="form-control"  name="degree_country" id="textfield"placeholder="China" value= {{data["degree_country"]}} >
+  </div>
+  <div class="form-group">
+    <label for="exampleInputPassword1">职称</label>
+    <input type="text" class="form-control"name="title" id="textfield"placeholder="professor" value= {{data["title"]}} >
+  </div>
+  		<div class="form-group">
+    <label for="exampleInputEmail1">通信地址</label>
+    <input type="text" class="form-control"name="address" id="textfield"placeholder="海南省海口市学院路三号" value= {{data["address"]}}  >
+  </div>
+  <div class="form-group">
+    <label for="exampleInputPassword1">手机</label>
+    <input type="text" class="form-control" name="tel" id="textfield"placeholder="17799123487" value= {{data["tel"]}} >
+  </div>
+  <div class="form-group">
+    <label for="exampleInputPassword1">家庭电话</label>
+    <input type="text" class="form-control" name="home_tel" id="textfield"placeholder="17799123487" value= {{data["home_tel"]}}  >
+  </div>
+ 
+	</div>
+		</div>
+	
+	
+	
+	<div class="col-md-4 space">
+		<div class="form-group">
+    <label for="exampleInputEmail1">性别</label>
+    <input type="text" class="form-control"name="sex" id="textfield"placeholder="male" value= {{data["sex"]}} >
+  </div>
+  <div class="form-group">
+    <label for="exampleInputPassword1">国籍</label>
+    <input type="text" class="form-control" name="nationality" id="textfield"placeholder="China" value= {{data["nationality"]}}  >
+  </div>
+
+	<div class="form-group">
+    <label for="exampleInputEmail1">出生年月</label>
+    <input type="date" class="form-control"name="date_of_birth" id="textfield"placeholder="1980/10/02" value= {{data["date_of_birth"]}} >
+  </div>
+  <div class="form-group">
+    <label for="exampleInputPassword1">最后学位</label>
+    <input type="text" class="form-control" name="final_degree" id="textfield"placeholder="PhD" value= {{data["final_degree"]}}  >
+  </div>
+
+	<div class="form-group">
+    <label for="exampleInputEmail1">获学位时间</label>
+    <input type="date" class="form-control"name="degree_date" id="textfield"placeholder="1997/09/01" value= {{data["degree_date"]}} >
+  </div>
+
+	<div class="form-group">
+    <label for="exampleInputEmail1">任职时间</label>
+    <input type="text" class="form-control" name="working_time" id="textfield"placeholder="5 years" value= {{data["working_time"]}}  >
+  </div>
+  <div class="form-group">
+    <label for="exampleInputPassword1">邮政编码</label>
+    <input type="text" class="form-control" name="postal_code" id="textfield"placeholder="571400" value= {{data["postal_code"]}}  >
+  </div>
+   <div class="form-group">
+    <label for="exampleInputPassword1">电子邮件</label>
+    <input type="text" class="form-control"  name="e_mail" id="textfield"placeholder="applicant@gmail.com" value= {{data["e_mail"]}}  >
+  </div>
+   <div class="form-group">
+    <label for="exampleInputPassword1">传真</label>
+    <input type="text" class="form-control"name="fax_code" id="textfield"placeholder="519-85129131" value= {{data["fax_code"]}} >
+  </div>
+
+		</div>
+	
+	<div class="col-md-4">
+	
+      
+     <div class="input-group" style="width:90%; height:30%; margin-top: 10px;">   
+     	<label for="exampleInputFile">照片</label>
+<input id="fileup" type="file" class="file"/>  
+     </div>   
+ 
+
+    </div>  
+ 
+
+ 
+	</div>
+
+<div class="row">
+		 <h5 class="page-header">现任职或学习单位</h5>
+		   <div class="col-md-6 space">
+		  	 <div class="form-group">
+    <label for="exampleInputName2">中文</label>
+    <input type="text" class="form-control" name="now_working_company_ch" id="textfield"placeholder="海南医学院" value= {{data["now_working_company_ch"]}} >
+  </div>
+
+		  </div>
+		  <div class="col-md-6 space">
+		  	 <div class="form-group" >
+    <label for="exampleInputEmail2">所在国文或英文</label>
+    <input type="text" class="form-control" name="now_working_company_en" id="textfield"placeholder="Hainan Medical University" value= {{data["now_working_company_en"]}} >
+  </div>
+		  </div>
+		 
+		 
+
+	</div>
+<div class="row">
+	<br /><br />
+		 <h4 class="page-header">主要学习经历</h4>
+		  <h5 class="page-header">本科</h5>
+		  <div class="col-md-6 space">
+		  	<div class="form-group">
+    <label for="exampleInputPassword1">毕业日期</label>
+    <input type="date" class="form-control" name="bachelor_date" id="textfield"placeholder="1990/09/01" value= {{data["bachelor_date"]}}  >
+  </div>
+  <div class="form-group">
+    <label for="exampleInputPassword1">所在大学</label>
+    <input type="text" class="form-control" name="bachelor_university" id="textfield"placeholder="Hainan Medical University" value= {{data["bachelor_university"]}}  >
+  </div>
+		  </div>
+		  <div class="col-md-6 space">
+		  	<div class="form-group">
+    <label for="exampleInputPassword1">专业</label>
+    <input type="text" class="form-control"name="bachelor_specialty" id="textfield"placeholder="Computer Science" value= {{data["bachelor_specialty"]}}   >
+  </div>
+		  </div>
+	</div>
+	<div class="row">
+		    <h5 class="page-header">硕士</h5>
+		  <div class="col-md-6 space">
+		  	<div class="form-group">
+    <label for="exampleInputPassword1">毕业日期</label>
+    <input type="date" class="form-control" name="master_date" id="textfield"placeholder="1993/09/01" value= {{data["master_date"]}} >
+  </div>
+  <div class="form-group">
+    <label for="exampleInputPassword1">所在大学</label>
+    <input type="text" class="form-control" name="master_university" id="textfield"placeholder="Hainan Medical University" value= {{data["master_university"]}}  >
+  </div>
+		  </div>
+		  <div class="col-md-6 space">
+		  	<div class="form-group">
+    <label for="exampleInputPassword1">专业</label>
+    <input type="text" class="form-control"name="master_specialty" id="textfield"placeholder="Computer Science" value= {{data["master_specialty"]}}   >
+  </div>
+  <div class="form-group">
+    <label for="exampleInputPassword1">论文题目</label>
+    <input type="text" class="form-control"name="master_paper" id="textfield"placeholder="How to spell 'Hello World'" value= {{data["master_paper"]}}   >
+  </div>
+		  </div>
+		</div>	
+			<div class="row">
+		   <h5 class="page-header">博士</h5>
+		  <div class="col-md-6 space">
+		  	<div class="form-group">
+    <label for="exampleInputPassword1">毕业日期</label>
+    <input type="date" class="form-control" name="phd_data" id="textfield"placeholder="1997/09/01" value= {{data["phd_data"]}}  >
+  </div>
+  <div class="form-group">
+    <label for="exampleInputPassword1">所在大学</label>
+    <input type="text" class="form-control" name="phd_university" id="textfield"placeholder="Hainan Medical University" value= {{data["phd_university"]}}  >
+  </div>
+		  </div>
+		  <div class="col-md-6 space">
+		  	<div class="form-group">
+    <label for="exampleInputPassword1">专业</label>
+    <input type="text" class="form-control" name="phd_specialty" id="textfield"placeholder="Computer Science" value= {{data["phd_specialty"]}}  >
+  </div>
+  <div class="form-group">
+    <label for="exampleInputPassword1">论文题目</label>
+    <input type="text" class="form-control"name="phd_paper" id="textfield"placeholder="How to spell 'Cervical spondylosis'" value= {{data["phd_paper"]}}  >
+  </div>
+		  </div></div>	
+		<div class="row">
+		 <h5 class="page-header">一站博士后</h5>
+		  <div class="col-md-6 space">
+		  	<div class="form-group">
+    <label for="exampleInputPassword1">出站日期</label>
+    <input type="date" class="form-control" name="one_stop_postdoctoral_date" id="textfield"placeholder="2001/09/09" value= {{data["one_stop_postdoctoral_date"]}}  >
+  </div>
+  <div class="form-group">
+    <label for="exampleInputPassword1">单位</label>
+    <input type="text" class="form-control" name="one_stop_postdoctoral_compony" id="textfield"placeholder="Hainan Medical University" value= {{data["one_stop_postdoctoral_compony"]}}   >
+  </div>
+
+		  </div>
+		  <div class="col-md-6 space">
+		  	  <div class="form-group">
+    <label for="exampleInputPassword1">导师</label>
+    <input type="text" class="form-control" name="one_stop_postdoctoral_tutor" id="textfield"placeholder="Jerry" value= {{data["one_stop_postdoctoral_tutor"]}}  >
+  </div>
+  <div class="form-group">
+    <label for="exampleInputPassword1">出站报告题目</label>
+    <input type="text" class="form-control" name="one_stop_postdoctoral_paper" id="textfield"placeholder="How to spell 'lumbar disc herniation'" value= {{data["one_stop_postdoctoral_paper"]}}  >
+  </div>
+		  </div></div>	
+		<div class="row">
+		 <h5 class="page-header">二站博士后</h5>
+		    <div class="col-md-6 space">
+		  	<div class="form-group">
+    <label for="exampleInputPassword1">出站日期</label>
+    <input type="date" class="form-control" name="two_stop_postdoctoral_date" id="textfield"placeholder="2004/09/09" value= {{data["two_stop_postdoctoral_date"]}}   >
+  </div>
+  <div class="form-group">
+    <label for="exampleInputPassword1">单位</label>
+    <input type="text" class="form-control"  name="two_stop_postdoctoral_compony" id="textfield"placeholder="Hainan Medical University" value= {{data["two_stop_postdoctoral_compony"]}}  >
+  </div>
+
+		  </div>
+		  <div class="col-md-6 space">
+		  <div class="form-group">
+    <label for="exampleInputPassword1">导师</label>
+    <input type="text" class="form-control"name="two_stop_postdoctoral_tutor" id="textfield"placeholder="Jerry" value= {{data["two_stop_postdoctoral_tutor"]}}   >
+  </div>
+  <div class="form-group">
+    <label for="exampleInputPassword1">出站报告题目</label>
+    <input type="text" class="form-control" name="two_stop_postdoctoral_paper" id="textfield"placeholder="Who I am" value= {{data["two_stop_postdoctoral_paper"]}}   >
+  </div>
+		  </div></div>
+		
+	<div class="row">
+	<br /><br />
+		 <h4 class="page-header">主要工作经历</h4>
+		 <div class="col-md-6 space">
+		  	<div class="form-group">
+    <label for="exampleInputPassword1">起止时间</label>
+    <input type="text" class="form-control"  name="main_work_exp1_time" id="textfield"placeholder="2004/09/09 -- 2008/09/09" value= {{data["main_work_exp1_time"]}}  >
+     <input  style="margin-top: 2%;"type="text" class="form-control"  name="main_work_exp2_time" id="textfield"placeholder="2004/09/09 -- 2008/09/09" value= {{data["main_work_exp2_time"]}}  >
+      <input style="margin-top: 2%;"type="text" class="form-control"  name="main_work_exp3_time" id="textfield"placeholder="2004/09/09 -- 2008/09/09" value= {{data["main_work_exp3_time"]}}  >
+  </div>
+  <div class="form-group">
+    <label for="exampleInputPassword1">工作单位</label>
+    <input type="text" class="form-control"name="main_work_exp1_company" id="textfield"placeholder="Hainan Medical University" value= {{data["main_work_exp1_company"]}}  >
+    <input style="margin-top: 2%;"type="text" class="form-control"name="main_work_exp2_company" id="textfield"placeholder="Hainan Medical University" value= {{data["main_work_exp2_company"]}}  >
+    <input style="margin-top: 2%;"type="text" class="form-control"name="main_work_exp3_company" id="textfield"placeholder="Hainan Medical University" value= {{data["main_work_exp3_company"]}}  >
+  </div>
+<div class="form-group">
+    <label for="exampleInputPassword1">职称</label>
+    <input type="text" class="form-control" name="main_work_exp1_title" id="textfield"placeholder="professor" value= {{data["main_work_exp1_title"]}} >
+     <input  style="margin-top: 2%;"type="text" class="form-control" name="main_work_exp2_title" id="textfield"placeholder="professor" value= {{data["main_work_exp2_title"]}} >
+      <input  style="margin-top: 2%;"type="text" class="form-control" name="main_work_exp3_title" id="textfield"placeholder="professor" value= {{data["main_work_exp3_title"]}} >
+  </div>
+		  </div>
+		  <div class="col-md-6 space">
+		  <div class="form-group">
+    <label for="exampleInputPassword1">职务</label>
+    <input type="text" class="form-control"name="main_work_exp1_post" id="textfield"placeholder="teacher" value= {{data["main_work_exp1_post"]}}  >
+     <input  style="margin-top: 2%;"type="text" class="form-control"name="main_work_exp2_post" id="textfield"placeholder="teacher" value= {{data["main_work_exp2_post"]}}  >
+      <input  style="margin-top: 2%;"type="text" class="form-control"name="main_work_exp3_post" id="textfield"placeholder="teacher" value= {{data["main_work_exp3_post"]}}  >
+  </div>
+  <div class="form-group">
+    <label for="exampleInputPassword1">从事专业（方向）</label>
+    <input type="text" class="form-control" name="main_work_exp1_specialty" id="textfield"placeholder="main_work_exp1_specialty" >
+     <input style="margin-top: 2%;"type="text" class="form-control" name="main_work_exp2_specialty" id="textfield"placeholder="main_work_exp2_specialty" >
+      <input style="margin-top: 2%;"type="text" class="form-control" name="main_work_exp3_specialty" id="textfield"placeholder="main_work_exp3_specialty" >
+  </div>
+		  </div>
+		</div>
+		<br />
+		   <button type="submit" class="btn btn-default" id="submit2">提交</button>
+</form>
+
+  </div>
+  	</div>
+
+<div class="row">
+	<nav aria-label="...">
+  <ul class="pager">
+
+    <li class="previous"><a href="page2.html"><span aria-hidden="true">&larr;</span> 上一页</a></li>  
+     <li><span class="label label-primary">第三页</span></li>
+    <li class="next"><a href="page4.html">下一页<span aria-hidden="true">&rarr;</span></a></li>
+  </ul>
+</nav>
+</div>
+		</div>
+
+	</body>
+</html>
